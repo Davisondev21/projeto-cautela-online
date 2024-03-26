@@ -14,7 +14,7 @@
     <!-- link para importação do css -->
 
     <link rel="stylesheet" href="../css/cautela.css">
-    
+    <script src="../javascript/index.js"></script>
 </head>
 
 <body>
@@ -75,7 +75,7 @@
 
                         <!-- tipos ds itens que seram adicionados no formulario  -->
 
-                        <label for="sector"> <strong> Itens: </strong></label><br>
+                     <!--  <label for="sector"> <strong> Itens: </strong></label><br>
                         <input type="text" class="form-control" id="user-type" name="user-type"> 
                     <br>
                         <label for="sector"><strong>Quantidade:</strong></label><br>
@@ -91,13 +91,13 @@
                         <input type="text" class="form-control" id="user-type" name="user-type"> 
                     <br>
                         <label for="sector"><strong>Quantidade:</strong></label><br>
-                        <input type="number" class="imput-number"><br>
+                        <input type="number" class="imput-number"><br>>
 
-                        <!-- qual a propriedade ou de qual empresa é o determinado item -->
+                         qual a propriedade ou de qual empresa é o determinado item -->
 
-                        <label for="hora"> <strong> propriedade :</strong></label>
+                      <!--  <label for="hora"> <strong> propriedade :</strong></label>
 
-                            <!-- <select class="form-control" id="user-type" name="user-type">
+                             <select class="form-control" id="user-type" name="user-type">
                                 <option value="padrao"> <strong> CALLIDUS </strong></option>
                                 <option value="gestor"> <strong> TECTOY </strong></option>
                                 <option value="admin"> <strong> VICTUM </strong></option>
@@ -106,6 +106,14 @@
                             </select><br> -->
 
                         <!-- se retorna ou não  -->
+
+                        <h1>itens</h1>
+
+                <input type="text" id="taskInput" placeholder="Digite uma nova tarefa">
+                <button onclick="addTask()">Adicionar Tarefa</button>
+
+                <ul id="taskList">
+                </ul>
 
                         <label for=""> <strong> RETORNA: </strong> </label><br>
 
@@ -116,8 +124,17 @@
                         <br>
 
                 </fieldset>
-                <p>Este é um exemplo de texto que pode ser impresso.</p>
+                
 
+
+
+
+
+
+
+
+</body>
+</html>
                 <button onclick="window.print()">Imprimir Página</button>
             </div>
 
