@@ -42,21 +42,18 @@ h2 {
     font-size: 20px;
 }
 
-/* .btn_user {
-    background-color: rgb(143, 143, 143);
-    color: black;
+.btn_user {
+    background-color: rgb(0, 202, 10);
+    color: rgb(0, 202, 10);
     border-radius: 6px;
     box-sizing: border-box;
-} */
+}
 
 img {
     width: 50px;
-    border-radius: 50px;
+    border-radius: 10vh;
 }
 
-.btn_user2 {
-    border-radius: 50px;
-}
 
 .imput-number {
     width: 100%;
