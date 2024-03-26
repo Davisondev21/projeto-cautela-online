@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cautela </title>
+
+    <!-- IMPORTAÇÃO DO ARQUIVO BOOTSTRAP PARA O CSS -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+
+    <!-- link para importação do css -->
+
+    <link rel="stylesheet" href="../css/cautela.css">
+    
+</head>
+
+<body>
+
+    <!-- INICIO DO CABEÇALHO DA PAGINA -->
+
+    <header></header>
+
+    <!-- FIM DO CABEÇALHO DA PAGINA -->
+
+    <main>
+
+        <!-- INICIO DO FORMULARIO DA CAUTELA  -->
+
+        <div class="box">
+            <div>
+                <fieldset>
+
+                    <h1 class="category"><strong> DESCRIÇÃO </strong></h1><br>
+
+                    <form method="post" id="cautela-form">
+
+                        <!-- SETORES DA EMPRESA  -->
+
+                        <label for="setor"> <strong> Setor: </strong></label>
+                        <select class="form-control" id="user-type" name="user-type">
+                            <option value="setor"> <strong> AMBULATORIO </strong></option>
+                            <option value="setor"> <strong> COMPRAS </strong></option>
+                            <option value="setor"> <strong> CONTROLADORIA </strong></option>
+                            <option value="setor"> <strong> ENGENHARIA DE PRODUTO </strong></option>
+                            <option value="setor"> <strong> ENGENHARIA DE TESTE/PROCESSO </strong></option>
+                            <option value="setor"> <strong> ESTOQUE </strong></option>
+                            <option value="setor"> <strong> EXPEDIÇÃO </strong></option>
+                            <option value="setor"> <strong> IMPORTAÇÃO </strong></option>
+                            <option value="setor"> <strong> SMT </strong></option>
+                            <option value="setor"> <strong> ÁREA TECNICA </strong></option>
+                            <option value="setor"> <strong> RECEBIMENTO</strong></option>
+                            <option value="setor"> <strong> FACILITES </strong></option>
+                            <option value="setor"> <strong> SEGURANÇA E MONITORAMENTO </strong></option>
+                            <option value="setor"> <strong> QUALIDADE </strong></option>
+                            <option value="setor"> <strong> CERTIFICAÇÕES </strong></option>
+                            <option value="setor"> <strong> PCP </strong></option>
+                            <option value="setor"> <strong> PCM </strong></option>
+                            <option value="setor"> <strong> RH </strong></option>
+                            <option value="setor"> <strong> SESMT </strong></option>
+                            <option value="setor"> <strong> FISCAL </strong></option>
+                        </select><br>
+
+                        <!-- data do formulario  -->
+
+                        <label for="data"> <strong> Data: </strong></label>
+                        <input type="date" name="data" id="data" class="form-control" required><br>
+
+                        <!-- hora que está sendo feito o formulario -->
+
+                        <label for="hora"> <strong> Hora:</strong></label>
+                        <input type="time" name="hora" id="hora" class="form-control" required><br> <br>
+
+                        <!-- tipos ds itens que seram adicionados no formulario  -->
+
+                        <label for="sector"> <strong> Itens: </strong></label><br>
+                        <input type="text" class="form-control" id="user-type" name="user-type"> 
+                    <br>
+                        <label for="sector"><strong>Quantidade:</strong></label><br>
+                        <input type="number" class="imput-number"><br>
+                     
+                         <label for="sector"> <strong> Itens: </strong></label><br>
+                        <input type="text" class="form-control" id="user-type" name="user-type"> 
+                    <br>
+                        <label for="sector"><strong>Quantidade:</strong></label><br>
+                        <input type="number" class="imput-number"><br>
+                        
+                        <label for="sector"> <strong> Itens: </strong></label><br>
+                        <input type="text" class="form-control" id="user-type" name="user-type"> 
+                    <br>
+                        <label for="sector"><strong>Quantidade:</strong></label><br>
+                        <input type="number" class="imput-number"><br>
+
+                        <!-- qual a propriedade ou de qual empresa é o determinado item -->
+
+                        <label for="hora"> <strong> propriedade :</strong></label>
+
+                            <!-- <select class="form-control" id="user-type" name="user-type">
+                                <option value="padrao"> <strong> CALLIDUS </strong></option>
+                                <option value="gestor"> <strong> TECTOY </strong></option>
+                                <option value="admin"> <strong> VICTUM </strong></option>
+                                <option value="admin"> <strong> ETTERA</strong></option>
+                                <option value="admin"> <strong> AMAZONAS INOVARE </strong></option>
+                            </select><br> -->
+
+                        <!-- se retorna ou não  -->
+
+                        <label for=""> <strong> RETORNA: </strong> </label><br>
+
+                        <label for="aprovado">SIM</label>
+                        <input type="radio" name="status" id="aprovado" class="checkbox" value="SIM" required>
+                        <label for="reprovado">NÃO</label>
+                        <input type="radio" name="status" id="reprovado" class="checkbox" value="NAO" required> <br>
+                        <br>
+
+                </fieldset>
+            </div>
+
+            <div class="form-group" id="autorizado">
+
+                <!-- <h2 class="category">AUTORIZADO POR :</h2>
+
+                <!-- quem autorizou o determinado formulario  -->
+
+                <!-- <label for="aprovado"> <strong> Diretor </strong></label>
+                <input type="radio" name="status" id="aprovado" class="checkbox" value="SIM" required><br>
+                <label for="aprovado"> <strong> Gestor </strong></label>
+                <input type="radio" name="status" id="aprovado" class="checkbox" value="SIM" required><br>
+                <label for="reprovado"> <strong> Coodernador </strong> </label>
+                <input type="radio" name="status" id="reprovado" class="checkbox" value="NAO" required> <br> <br>
+
+
+                <select class="form-control" id="user-type" name="user-type">
+                    <option value="padrao"> <strong> Marcus Morais ( Diretor )</strong></option>
+                    <option value="gestor"> <strong> Paulo Freitas (Gestor) </strong></option>
+                    <option value="admin"> <strong> Zaquel Martins ( Gestor ) </strong></option>
+                    <option value="padrao"> <strong> Eder Cursino ( Coodernador ) </strong></option>
+                    <option value="gestor"> <strong> Elzio Neto ( Coodernador ) </strong></option>
+                    <option value="admin"> <strong> Conceição Castro (Gestor) </strong></option>
+                    <option value="gestor"> <strong> Charles Sousa ( Coodernador) </strong></option>
+                    <option value="admin"> <strong> Francisco Saldanha (Coodernador)</strong></option>
+                    <option value="padrao"> <strong> Davi Raio (Coodernador) </strong></option>
+                    <option value="gestor"> <strong> Nemerson Freitas( Coodernador) </strong></option>
+                    <option value="admin"> <strong> Flavia Romeu </strong></option>
+                    <option value="padrao"> <strong> Fatima Guselli (Gestor) </strong></option>
+                </select><br>
+
+
+                <!-- data de quando e quem aprovou  
+
+                <label for="data_autorizado"> <strong> Data de aprovação: </strong></label>
+                <input type="date" name="data_autorizado" id="data_autorizado" class="form-control" value=""
+                    required><br>
+            </div>
+            <br>
+            <div>
+                <label for="aprovado">Aprovado:</label>
+                <input type="radio" name="status" id="aprovado" class="checkbox" value="APROVADO" required>
+                <label for="reprovado">Reprovado:</label>
+                <input type="radio" name="status" id="reprovado" class="checkbox" value="REPROVADO" required>
+            </div>
+
+<br>
+            <div id=" historico-form">
+                <fieldset>
+
+                    <h2 class="category">HISTÓRICO DE CAUTELAS</h2>
+
+
+
+                    <div class="form-group">
+                        <label for="filtro"> <strong> Filtrar por: </strong></label>
+                        <select class="form-control" id="filtro" name="filtro">
+                            <option value="aprovado">Aprovado por</option>
+                            <option value="material">Material</option>
+                            <option value="data">Data</option>
+                            <option value="portador">Portador</option>
+                        </select><br>
+                        
+                    </div>
+                </fieldset>
+            </div>
+
+        </div>
+
+        </form>
+    </main> --> 
+
+    <!-- <table class="table table-striped">
+        <thead>
+            <tr class="table-header">
+                <th>Usuário</th>
+                <th>Data</th>
+                <th>Setor</th>
+                <th>Item</th>
+                <th>Categoria do Item</th>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Responsável</th>
+                <th>Aprovado por</th>
+                <th>Data de Aprovação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Usuário 1</td>
+                <td>10/01/2022</td>
+                <td>Setor 1</td>
+                <td>Item 1</td>
+                <td>Categoria 1</td>
+                <td>Produto 1</td>
+                <td>5</td>
+                <td>Responsável 1</td>
+                <td>Admin</td>
+                <td>10/02/2022</td>
+            </tr>
+            <tr>
+                <td>Usuário 2</td>
+                <td>12/01/2022</td>
+                <td>Setor 2</td>
+                <td>Item 2</td>
+                <td>Categoria 2</td>
+                <td>Produto 2</td>
+                <td>3</td>
+                <td>Responsável 2</td>
+                <td>Gestor 1</td>
+                <td>15/02/2022</td>
+            </tr>
+            <tr>
+                <td>Usuário 3</td>
+                <td>15/01/2022</td>
+                <td>Setor 3</td>
+                <td>Item 3</td>
+                <td>Categoria 3</td>
+                <td>Produto 3</td>
+                <td>2</td>
+                <td>Responsável 3</td>
+                <td>Admin</td>
+                <td>20/02/2022</td>
+            </tr>
+        </tbody>
+    </table> -->
+
+
+
+</body>
+
+</html>
