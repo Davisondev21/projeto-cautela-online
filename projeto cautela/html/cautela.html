@@ -71,7 +71,7 @@
                         <!-- hora que está sendo feito o formulario -->
 
                         <label for="hora"> <strong> Hora:</strong></label>
-                        <input type="time" name="hora" id="hora" class="form-control" required><br> <br>
+                        <input type="time" name="hora" id="hora" class="form-control" required><br> 
 
                         <!-- tipos ds itens que seram adicionados no formulario  -->
 
@@ -107,10 +107,10 @@
 
                         <!-- se retorna ou não  -->
 
-                        <h1>itens</h1>
+                        <label for="itens"> <strong> Itens: </strong></label> 
 
-                <input type="text" id="taskInput" placeholder="Digite uma nova tarefa">
-                <button onclick="addTask()">Adicionar Tarefa</button>
+                <input class="form-control"  type="text" id="taskInput" placeholder="Digite uma nova tarefa"> <br>
+                <button class="btn_user " onclick="addTask()">Adicionar Tarefa</button>
 
                 <ul id="taskList">
                 </ul>
