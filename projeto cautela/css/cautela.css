@@ -32,15 +32,19 @@ body {
     transform: translate(25%, -0%);
     box-shadow: 0 0 .4rem .1rem rgba(0, 255, 0, 0.575);
 }
+.form-control:hover{
 
+    background-color: #cecece9f;
+    transform:	translate(0,	.22rem);
+    transition: 0.5s;
+}
 h2 {
     font-size: 20px;
 }
 
 .btn_user {
-    background-color: rgba(0, 226, 0, 0.842);
+    background-color: rgb(143, 143, 143);
     color: black;
-    border: 1px solid #51f442;
     border-radius: 6px;
     box-sizing: border-box;
 }
