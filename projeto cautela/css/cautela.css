@@ -5,6 +5,10 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.button-imp{
+    border-radius: 10px;
+    width: 500px;
+}
 
 .box {
     width: 120%;
