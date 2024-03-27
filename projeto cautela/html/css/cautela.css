@@ -12,6 +12,7 @@ h1 {
         border: none; /* Remove a borda do botão */
         border-radius: 30px; /*Borda arredondada */
         cursor: pointer;
+        margin-left: 15px;
 }
 img {
     border-radius: 50px;
@@ -56,6 +57,7 @@ img {
     font-size: 18px;
     margin-bottom: 12px;
     cursor: pointer;
+    margin-left: 15px;
   }
   
   /* Style the checkmark */
@@ -122,6 +124,7 @@ img {
     width: 25%;
     padding: 25px;
     border: solid 3px black;
+    margin-left: 15px;
   }
   .form1{
     width: 35%;
@@ -133,4 +136,7 @@ img {
   }
   .form-txt{
     margin-left:15px;
+  }
+  .button-imp{
+    margin-left: 15px;
   }
