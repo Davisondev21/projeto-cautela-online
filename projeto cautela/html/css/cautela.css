@@ -113,3 +113,6 @@ img {
       transform: translate(-50%, -50%) rotate(45deg) scale(1);
     }
   }
+  .bloco-txt{
+    background-color: black;
+  }
