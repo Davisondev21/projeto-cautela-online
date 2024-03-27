@@ -12,6 +12,7 @@ h1 {
         border: none; /* Remove a borda do botão */
         border-radius: 30px; /*Borda arredondada */
         cursor: pointer;
+        margin-left: 15px;
 }
 img {
     border-radius: 50px;
@@ -56,6 +57,7 @@ img {
     font-size: 18px;
     margin-bottom: 12px;
     cursor: pointer;
+    margin-left: 15px;
   }
   
   /* Style the checkmark */
@@ -112,4 +114,29 @@ img {
     100% {
       transform: translate(-50%, -50%) rotate(45deg) scale(1);
     }
+  }
+  .bloco-txt{
+    
+    border: solid black;
+    margin-left: 25px;
+  }
+  .form-control2{
+    width: 25%;
+    padding: 25px;
+    border: solid 3px black;
+    margin-left: 15px;
+  }
+  .form1{
+    width: 35%;
+    padding: 8px ;
+  }
+  .form-control{
+    width: 75%;
+    margin-left: 10px;
+  }
+  .form-txt{
+    margin-left:15px;
+  }
+  .button-imp{
+    margin-left: 15px;
   }
