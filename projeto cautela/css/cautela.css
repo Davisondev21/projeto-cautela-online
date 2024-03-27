@@ -370,3 +370,6 @@ img {
     }
   }
   
+textarea {
+    margin-left: auto;
+}
