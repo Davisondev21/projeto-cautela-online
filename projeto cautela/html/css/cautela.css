@@ -120,9 +120,15 @@ img {
     border: solid black;
     margin-left: 25px;
   }
-  .form-control2{
-    width: 25%;
+  .form-control1{
+    width: 20%;
     padding: 25px;
+    border: solid 3px black;
+    margin-left: 15px;
+  }
+  .form-control2{
+    width: 15%;
+    padding: 30px;
     border: solid 3px black;
     margin-left: 15px;
   }
