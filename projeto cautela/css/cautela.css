@@ -1,87 +1,59 @@
-/* body {
-    width: 25%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-.button-imp{
-    border-radius: 10px;    
-}
-
-.box {
-    width: 100%;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -85%);
-    color: white;
-    padding: 25px;
-    border: 1px solid rgb(0, 173, 9);
-    border-radius: 6px;
+body {
     background-image: linear-gradient(to right, rgba(0, 138, 23, 0.836), rgb(0, 46, 6));
-    box-shadow: 0 0 .6rem .1rem rgb(1, 122, 1);
 }
-
-.category {
+ 
+h1 {
     text-align: center;
-    font-size: 25px;
-    font-family: sans-serif;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border: 2px solid rgb(0, 202, 10);
-    border-radius: 10px;
-    width: 65%;
-    transform: translate(25%, -0%);
-    box-shadow: 0 0 .4rem .1rem rgba(0, 255, 0, 0.575);
+    font-size: 40px;
 }
-.form-control:hover{
-
-    background-color: #cecece9f;
-    transform:	translate(0,	.22rem);
-    transition: 0.5s;
-}
-h2 {
-    font-size: 20px;
-}
-
+ 
 .btn_user {
-    background-color: rgb(0, 202, 10);
-    color: rgb(0, 202, 10);
-    border-radius: 6px;
-    box-sizing: border-box;
+        width: -1px;
+        border: none; /* Remove a borda do botão */
+        border-radius: 30px; /*Borda arredondada */
+        cursor: pointer;
 }
-
 img {
-    width: 50px;
-    border-radius: 10vh;
+    border-radius: 50px;
+    width: 5vh; /* Diminui a largura da imagem para 70px do tamanho original */
+ 
 }
-
-
-.imput-number {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    color: black;
-    width: 15%;
-    padding:1%;
-}
-/* Hide the default checkbox */
-.checkbox-container input {
+/* Estilos para telas de celular */
+@media only screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+    .container {
+      width: 100%;
+    }   
+  }
+  
+  /* Estilos para tablets */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  /* Estilos para telas maiores */
+  @media only screen and (min-width: 1025px) {
+    body {
+      font-size: 18px;
+    }
+  }
+  
+ 
+  .checkbox-container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
   }
   
-  /* Create a custom checkbox container */
+  
   .checkbox-container {
     position: relative;
     display: inline-block;
-    font-size: 18px; /* Make the checkbox slightly bigger */
+    font-size: 18px;
     margin-bottom: 12px;
     cursor: pointer;
   }
@@ -141,7 +113,3 @@ img {
       transform: translate(-50%, -50%) rotate(45deg) scale(1);
     }
   }
-  
-textarea {
-    margin-left: auto;
-}
