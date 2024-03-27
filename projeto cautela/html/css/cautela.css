@@ -114,5 +114,23 @@ img {
     }
   }
   .bloco-txt{
-    background-color: black;
+    
+    border: solid black;
+    margin-left: 25px;
+  }
+  .form-control2{
+    width: 25%;
+    padding: 25px;
+    border: solid 3px black;
+  }
+  .form1{
+    width: 35%;
+    padding: 8px ;
+  }
+  .form-control{
+    width: 75%;
+    margin-left: 10px;
+  }
+  .form-txt{
+    margin-left:15px;
   }
