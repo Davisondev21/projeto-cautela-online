@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cautela </title>
+    <title>Cautela Online </title>
 
     <!-- IMPORTAÇÃO DO ARQUIVO BOOTSTRAP PARA O CSS -->
 
@@ -42,11 +42,14 @@
             <div>
                 <fieldset>
 
-                    <h1 class="category"><strong> CAUTELA ONLINE </strong></h1><br>
+                    <h1 class="category"><strong> CAUTELA ONLINE </strong></h1>
 
                     <form class="full-form" method="post" id="cautela-form">
 
                         <label for="data" class="form-txt"> <strong> Funcionario  </strong></label><br>
+            <input type="text" name="data" id="data" class="form-control" required><br>
+
+            <label for="data" class="form-txt"> <strong> Descrição/Anotação  </strong></label><br>
             <input type="text" name="data" id="data" class="form-control" required><br>
 
                         <!-- SETORES DA EMPRESA  -->
@@ -128,17 +131,17 @@
 
                         <label for="itens" class="form-txt"> <strong> Itens: </strong></label> 
 
-                <input class="form-control"  type="text" id="taskInput" placeholder="Digite uma nova tarefa"> <br>
+                <input class="form-control"  type="text" id="taskInput" placeholder="Digite um novo item"> <br>
                 <button class="btn_user " onclick="addTask()">
                     <img src="img/imagem de um mais.png" alt="">
                     </button>
                
                 <ul id="taskList">
                 </ul>
-                <label for="data" class="form-txt"> <strong> Assinatura: </strong> <br><br><br></label>
+                <label for="data" class="form-txt"> <strong> portador: </strong><br>assinatura/carimbo <br><br><br></label>
             <input type="text" name="data" id="data" class="form-control1" required>
 
-            <label for="data" class="form-txt"> <strong> Carimbo:</strong> <br><br> <br></label>
+            <label for="data" class="form-txt"> <strong> Autorizado Por:</strong> <br>assinatura/carimbo<br> <br></label>
             <input type="text" name="data" id="data" class="form-control1" required><br>
                           <label for="" class="form-txt"> <strong> RETORNA: </strong> </label><br>
 
