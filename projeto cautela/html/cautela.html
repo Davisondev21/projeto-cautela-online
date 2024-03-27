@@ -7,11 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cautela </title>
 
-    <!-- IMPORTAÇÃO DO ARQUIVO BOOTSTRAP PARA O CSS -->
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
-
-    <!-- link para importação do css -->
 
     <link rel="stylesheet" href="../css/cautela.css">
     <script src="../javascript/index.js"></script>
@@ -19,27 +15,17 @@
 
 <body>
 
-    <!-- INICIO DO CABEÇALHO DA PAGINA -->
-
-    <header></header>
-
-    <!-- FIM DO CABEÇALHO DA PAGINA -->
-
     <main>
 
-        <!-- INICIO DO FORMULARIO DA CAUTELA  -->
-
         <div class="box">
-            <div>
+            <div>   
                 <fieldset>
 
                     <h1 class="category"><strong> CAUTELA ONLINE </strong></h1><br>
 
                     <form method="post" id="cautela-form">
 
-                        <!-- SETORES DA EMPRESA  -->
-
-                        <label for="setor"> <strong> Setor: </strong></label>
+                        <label for="setor"> <strong> De : </strong></label>
                         <select class="form-control" id="user-type" name="user-type">
                             <option value="setor"> <strong> AMBULATORIO </strong></option>
                             <option value="setor"> <strong> COMPRAS </strong></option>
@@ -63,55 +49,43 @@
                             <option value="setor"> <strong> FISCAL </strong></option>
                         </select><br>
 
-                        <!-- data do formulario  -->
+                        <label for="setor"> <strong> Para: </strong></label>
+                        <select class="form-control" id="user-type" name="user-type">
+                            <option value="setor"> <strong> AMBULATORIO </strong></option>
+                            <option value="setor"> <strong> COMPRAS </strong></option>
+                            <option value="setor"> <strong> CONTROLADORIA </strong></option>
+                            <option value="setor"> <strong> ENGENHARIA DE PRODUTO </strong></option>
+                            <option value="setor"> <strong> ENGENHARIA DE TESTE/PROCESSO </strong></option>
+                            <option value="setor"> <strong> ESTOQUE </strong></option>
+                            <option value="setor"> <strong> EXPEDIÇÃO </strong></option>
+                            <option value="setor"> <strong> IMPORTAÇÃO </strong></option>
+                            <option value="setor"> <strong> SMT </strong></option>
+                            <option value="setor"> <strong> ÁREA TECNICA </strong></option>
+                            <option value="setor"> <strong> RECEBIMENTO</strong></option>
+                            <option value="setor"> <strong> FACILITES </strong></option>
+                            <option value="setor"> <strong> SEGURANÇA E MONITORAMENTO </strong></option>
+                            <option value="setor"> <strong> QUALIDADE </strong></option>
+                            <option value="setor"> <strong> CERTIFICAÇÕES </strong></option>
+                            <option value="setor"> <strong> PCP </strong></option>
+                            <option value="setor"> <strong> PCM </strong></option>
+                            <option value="setor"> <strong> RH </strong></option>
+                            <option value="setor"> <strong> SESMT </strong></option>
+                            <option value="setor"> <strong> FISCAL </strong></option>
+                        </select><br>
 
                         <label for="data"> <strong> Data: </strong></label>
                         <input type="date" name="data" id="data" class="form-control" required><br>
 
-                        <!-- hora que está sendo feito o formulario -->
 
                         <label for="hora"> <strong> Hora:</strong></label>
                         <input type="time" name="hora" id="hora" class="form-control" required><br> 
 
-                        <!-- tipos ds itens que seram adicionados no formulario  -->
-
-                        <!-- <label for="sector"> <strong> Itens: </strong></label><br>
-                        <input type="text" class="form-control" id="user-type" name="user-type"> 
-                    <br>
-                        <label for="sector"><strong>Quantidade:</strong></label><br>
-                        <input type="number" class="imput-number"><br>
-                     
-                         <label for="sector"> <strong> Itens: </strong></label><br>
-                            <input type="text" class="form-control" id="user-type" name="user-type"> 
-                    <br>
-                        <label for="sector"><strong>Quantidade:</strong></label><br>
-                        <input type="number" class="imput-number"><br>
-                        
-                        <label for="sector"> <strong> Itens: </strong></label><br>
-                        <input type="text" class="form-control" id="user-type" name="user-type"> 
-                    <br>
-                        <label for="sector"><strong>Quantidade:</strong></label><br>
-                        <input type="number" class="imput-number"><br>>
-
-                         qual a propriedade ou de qual empresa é o determinado item -->
-
-                      <!--  <label for="hora"> <strong> propriedade :</strong></label>
-
-                             <select class="form-control" id="user-type" name="user-type">
-                                <option value="padrao"> <strong> CALLIDUS </strong></option>
-                                <option value="gestor"> <strong> TECTOY </strong></option>
-                                <option value="admin"> <strong> VICTUM </strong></option>
-                                <option value="admin"> <strong> ETTERA</strong></option>
-                                <option value="admin"> <strong> AMAZONAS INOVARE </strong></option>
-                            </select><br> -->
-
-                        <!-- se retorna ou não  -->
-
                         <label for="itens"> <strong> Itens: </strong></label> 
 
-                <input class="form-control"  type="text" id="taskInput" placeholder="Digite uma nova tarefa"> <br>
+                <input class="form-control"  type="text" id="taskInput" placeholder="Digite um novo iten"> <br>
                 <button class="btn_user " onclick="addTask()">
-                    <img src="./img/imagem de um mais.png" alt="">
+
+                    <img src="./img/imagem de um mais.png" alt="imagem de um mais verde">
                     </button>
                
                 <ul id="taskList">
@@ -119,25 +93,16 @@
                 
                           <label for=""> <strong> RETORNA: </strong> </label><br>
 
-                        <label class="checkbox-container">
-                            <input type="checkbox" />
-                            <span class="checkmark"></span>
-                          </label>
+                            <label class="container">
+                            <input checked="checked" type="checkbox">
+                            <div class="checkmark"></div>
+                            </label>
                           <br>
                           <br>
-
                 </fieldset>
-
-
-
-
-                
- 
 </html>
                 <button onclick="window.print()">Imprimir Página</button>
             </div>
-
-
 </body>
 
 </html>

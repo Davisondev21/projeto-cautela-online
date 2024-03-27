@@ -1,368 +1,43 @@
 body {
-    width: 25%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.box {
-    width: 120%;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    padding: 25px;
-    border: 1px solid rgb(0, 173, 9);
-    border-radius: 6px;
     background-image: linear-gradient(to right, rgba(0, 138, 23, 0.836), rgb(0, 46, 6));
-    box-shadow: 0 0 .6rem .1rem rgb(1, 122, 1);
 }
-
-.category {
+ 
+h1 {
     text-align: center;
-    font-size: 25px;
-    font-family: sans-serif;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border: 2px solid rgb(0, 202, 10);
-    border-radius: 10px;
-    width: 65%;
-    transform: translate(25%, -0%);
-    box-shadow: 0 0 .4rem .1rem rgba(0, 255, 0, 0.575);
-}
-.form-control:hover{
-
-    background-color: #cecece9f;
-    transform:	translate(0,	.22rem);
-    transition: 0.5s;
-}
-h2 {
-    font-size: 20px;
+    font-size: 40px;
 }
 
 .btn_user {
-    background-color: rgb(0, 202, 10);
-    color: rgb(0, 202, 10);
-    border-radius: 6px;
-    box-sizing: border-box;
+        width: -1px;
+        border: none; /* Remove a borda do botão */
+        border-radius: 30px; /*Borda arredondada */
+        cursor: pointer;
 }
-
 img {
-    width: 50px;
-    border-radius: 10vh;
+    border-radius: 50px;
+    width: 5vh; /* Diminui a largura da imagem para 70px do tamanho original */
+
 }
-
-
-.imput-number {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    color: black;
-    width: 15%;
-    padding:1%;
-}
-
-
-
-
-@media(max-width:1700px){
-
+/* Estilos para telas de celular */
+@media only screen and (max-width: 600px) {
     body {
-        width: 25%;
-        background-image: url(https://th.bing.com/th/id/OIP.-q0wRqywq4K1pMDEgYFjVgAAAA?pid=ImgDet&rs=1);
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+      font-size: 14px;
     }
-
-    .box {
-        width: 130%;
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        padding: 25px;
-        border: 1px solid rgb(0, 173, 9);
-        border-radius: 6px;
-        background-image: linear-gradient(to right, rgba(0, 138, 23, 0.836), rgb(0, 46, 6));
-        box-shadow: 0 0 .6rem .1rem rgb(1, 122, 1);
-    }
-}
-
-@media(max-width:1400px){
-
+    .container {
+      width: 100%;
+    }   
+  }
+  
+  /* Estilos para tablets */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
     body {
-        width: 25%;
-        background-image: url(https://th.bing.com/th/id/OIP.-q0wRqywq4K1pMDEgYFjVgAAAA?pid=ImgDet&rs=1);
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+      font-size: 16px;
     }
-
-    .box {
-        width: 150%;
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        padding: 25px;
-        border: 1px solid rgb(0, 173, 9);
-        border-radius: 6px;
-        background-image: linear-gradient(to right, rgba(0, 138, 23, 0.836), rgb(0, 46, 6));
-        box-shadow: 0 0 .6rem .1rem rgb(1, 122, 1);
-    }
-
-    .category {
-        text-align: center;
-        font-size: 20px;
-        font-family: sans-serif;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        border: 2px solid rgb(0, 202, 10);
-        border-radius: 10px;
-        width: 65%;
-        transform: translate(25%, -0%);
-        box-shadow: 0 0 .4rem .1rem rgba(0, 255, 0, 0.575);
-    }
-}
-
-@media(max-width:960px){
-
+  }
+  
+  /* Estilos para telas maiores */
+  @media only screen and (min-width: 1025px) {
     body {
-        width: 25%;
-        background-image: url(https://th.bing.com/th/id/OIP.-q0wRqywq4K1pMDEgYFjVgAAAA?pid=ImgDet&rs=1);
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .box {
-        width: 120%;
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        padding: 25px;
-        border: 1px solid rgb(0, 173, 9);
-        border-radius: 6px;
-        background-image: linear-gradient(to right, rgba(0, 138, 23, 0.836), rgb(0, 46, 6));
-        box-shadow: 0 0 .6rem .1rem rgb(1, 122, 1);
-    }
-}
-
-
-@media(max-width:870px){
-
-    body {
-        width: 25%;
-        background-image: url(https://th.bing.com/th/id/OIP.-q0wRqywq4K1pMDEgYFjVgAAAA?pid=ImgDet&rs=1);
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .box {
-        width: 150%;
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        padding: 25px;
-        border: 1px solid rgb(0, 173, 9);
-        border-radius: 6px;
-        background-image: linear-gradient(to right, rgba(0, 138, 23, 0.836), rgb(0, 46, 6));
-        box-shadow: 0 0 .6rem .1rem rgb(1, 122, 1);
-    }
-}
-
-
-
-@media(max-width:640px){
-
-    body {
-        width: 25%;
-        background-image: url(https://th.bing.com/th/id/OIP.-q0wRqywq4K1pMDEgYFjVgAAAA?pid=ImgDet&rs=1);
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .box {
-        width: 180%;
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        padding: 25px;
-        border: 1px solid rgb(0, 173, 9);
-        border-radius: 6px;
-        background-image: linear-gradient(to right, rgba(0, 138, 23, 0.836), rgb(0, 46, 6));
-        box-shadow: 0 0 .6rem .1rem rgb(1, 122, 1);
-    }
-    .h1{
-
-        font-size: 16px;
-
-}
-
-
-}
-
-@media(max-width:520px){
-
-    body {
-        width: 25%;
-        background-image: url(https://th.bing.com/th/id/OIP.-q0wRqywq4K1pMDEgYFjVgAAAA?pid=ImgDet&rs=1);
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .box {
-        width: 200%;
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        padding: 25px;
-        border: 1px solid rgb(0, 173, 9);
-        border-radius: 6px;
-        background-image: linear-gradient(to right, rgba(0, 138, 23, 0.836), rgb(0, 46, 6));
-        box-shadow: 0 0 .6rem .1rem rgb(1, 122, 1);
-    }
-
-    .h1{
-
-        font-size: 14px;
-
-}
-
-}
-
-@media(max-width:400px){
-
-    body {
-        width: 25%;
-        background-image: url(https://th.bing.com/th/id/OIP.-q0wRqywq4K1pMDEgYFjVgAAAA?pid=ImgDet&rs=1);
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .box {
-        width: 210%;
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        padding: 25px;
-        border: 1px solid rgb(0, 173, 9);
-        border-radius: 6px;
-        background-image: linear-gradient(to right, rgba(0, 138, 23, 0.836), rgb(0, 46, 6));
-        box-shadow: 0 0 .6rem .1rem rgb(1, 122, 1);
-    }
-
-    .h1{
-
-        font-size: 12px;
-
-}
-
-    .h2{
-
-        font-size: 10px;
-    }
-}
-
-/* Hide the default checkbox */
-.checkbox-container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-  }
-  
-  /* Create a custom checkbox container */
-  .checkbox-container {
-    position: relative;
-    display: inline-block;
-    font-size: 18px; /* Make the checkbox slightly bigger */
-    margin-bottom: 12px;
-    cursor: pointer;
-  }
-  
-  /* Style the checkmark */
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 30px; /* Make the checkbox slightly bigger */
-    width: 30px; /* Make the checkbox slightly bigger */
-    border: 2px solid #ccc; /* Add border for 3D effect */
-    border-radius: 6px; /* Round the corners */
-    background-color: #fff; /* Default color */
-    transition: all 0.3s ease; /* Add smooth transition */
-  }
-  
-  /* Show the checkmark when checkbox is checked */
-  .checkbox-container input:checked ~ .checkmark:after {
-    display: block;
-    animation: checkboxExpand 0.3s ease forwards;
-  }
-  
-  /* Style the checkmark/indicator */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%) rotate(45deg) scale(0); /* Center and hide initially, then scale to appear */
-    width: 8px; /* Adjust size */
-    height: 15px; /* Adjust size */
-    border: solid #fff; /* Change color of the tick to white */
-    border-width: 0 4px 4px 0; /* Adjust thickness and direction */
-  }
-  
-  /* On hover, add a grey background color */
-  .checkbox-container:hover .checkmark {
-    background-color: #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
-    transform: scale(1.05); /* Scale up slightly */
-  }
-  
-  /* When the checkbox is checked, add a green background */
-  .checkbox-container input:checked ~ .checkmark {
-    background-color: #4caf50;
-    border-color: #4caf50; /* Change border color */
-    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Add shadow for 3D effect */
-  }
-  
-  @keyframes checkboxExpand {
-    0% {
-      transform: translate(-50%, -50%) rotate(45deg) scale(0);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(45deg) scale(1);
+      font-size: 18px;
     }
   }
-  
