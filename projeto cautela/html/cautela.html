@@ -23,15 +23,14 @@
 
                     <h1 class="category"><strong> CAUTELA ONLINE </strong></h1><br>
 
-                    <form method="post" id="cautela-form">
+                    <form class="full-form" method="post" id="cautela-form">
 
                         <label for="data" class="form-txt"> <strong> Funcionario  </strong></label><br>
             <input type="text" name="data" id="data" class="form-control" required><br>
 
                         <!-- SETORES DA EMPRESA  -->
-                        <label for="setor"> <strong> DE: </strong></label>
-                        <select class="form-control" id="user-type" name="user-type">
-                           
+                        <label for="setor" class="form-txt"> <strong> DE: </strong> <br><br></label>                       <select class="form1" id="user-type" name="user-type">
+                            
                             <option value="setor"> <strong> T.I </strong></option>
                             <option value="setor"> <strong> AMBULATORIO </strong></option>
                             <option value="setor"> <strong> COMPRAS </strong></option>
@@ -58,6 +57,8 @@
                         <label for="setor" class="form-txt"> <strong> PARA:</strong> <br> <br></label>
                         <select class="form1" id="user-type" name="user-type">
                             
+                            <option value="setor"> <strong> T.I </strong></option>
+                            <option value="setor"> <strong> DESENVOLVIMENTO </strong></option>
                             <option value="setor"> <strong> AMBULATORIO </strong></option>
                             <option value="setor"> <strong> COMPRAS </strong></option>
                             <option value="setor"> <strong> CONTROLADORIA </strong></option>
@@ -90,28 +91,6 @@
                         <label for="hora" class="form-txt"> <strong> Hora:</strong></label>
                         <input type="time" name="hora" id="hora" class="form-control" required><br> 
 
-                        <!-- tipos ds itens que seram adicionados no formulario  -->
-
-                        <!-- <label for="sector"> <strong> Itens: </strong></label><br>
-                        <input type="text" class="form-control" id="user-type" name="user-type"> 
-                    <br>
-                        <label for="sector"><strong>Quantidade:</strong></label><br>
-                        <input type="number" class="imput-number"><br>
-                     
-                         <label for="sector"> <strong> Itens: </strong></label><br>
-                            <input type="text" class="form-control" id="user-type" name="user-type"> 
-                    <br>
-                        <label for="sector"><strong>Quantidade:</strong></label><br>
-                        <input type="number" class="imput-number"><br>
-                        
-                        <label for="sector"> <strong> Itens: </strong></label><br>
-                        <input type="text" class="form-control" id="user-type" name="user-type"> 
-                    <br>
-                        <label for="sector"><strong>Quantidade:</strong></label><br>
-                        <input type="number" class="imput-number"><br>>
-
-                         qual a propriedade ou de qual empresa é o determinado item -->
-
                        <label for="hora" class="form-txt"> <strong> propriedade :</strong></label>
 
                              <select class="form-control" id="user-type" name="user-type">
@@ -134,8 +113,11 @@
                
                 <ul id="taskList">
                 </ul>
-                <label for="data" class="form-txt"> <strong> Assinatura </strong></label><br>
-            <input type="text" name="data" id="data" class="form-control2" required><br>
+                <label for="data" class="form-txt"> <strong> Assinatura: </strong> <br><br><br></label>
+            <input type="text" name="data" id="data" class="form-control1" required>
+
+            <label for="data" class="form-txt"> <strong> Carimbo:</strong> <br><br> <br></label>
+            <input type="text" name="data" id="data" class="form-control1" required><br>
                           <label for="" class="form-txt"> <strong> RETORNA: </strong> </label><br>
 
                             <label class="container">
@@ -143,13 +125,15 @@
                             </label>
                           <br>
                           <br>
+
+                          
                 </fieldset>
 </html>
                 <button class="button-imp" onclick="window.print()"><img src="img/imagem de uma impresora.png" alt=""></button>
             </div>
             <!-- <textarea name="" class="bloco-txt" cols="30" rows="10"></textarea> -->
             
-
+        </form>
             
 </body>
 
