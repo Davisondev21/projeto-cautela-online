@@ -22,7 +22,7 @@
           'opsz' 24
         }
         </style>
-    <link rel="stylesheet" href="./css/cautela.css">
+    <link rel="stylesheet" href="css/cautela.css">
     <script src="../javascript/index.js"></script>
 </head>
 
@@ -46,9 +46,11 @@
 
                     <form method="post" id="cautela-form">
 
+                        <label for="data" class="form-txt"> <strong> Funcionario  </strong></label><br>
+            <input type="text" name="data" id="data" class="form-control" required><br>
+
                         <!-- SETORES DA EMPRESA  -->
-                        <label for="setor"> <strong> DE: </strong></label>
-                        <select class="form-control" id="user-type" name="user-type">
+                        <label for="setor" class="form-txt"> <strong> DE: </strong></label><br>                        <select class="form1" id="user-type" name="user-type">
                             
                             <option value="setor"> <strong> AMBULATORIO </strong></option>
                             <option value="setor"> <strong> COMPRAS </strong></option>
@@ -70,10 +72,10 @@
                             <option value="setor"> <strong> RH </strong></option>
                             <option value="setor"> <strong> SESMT </strong></option>
                             <option value="setor"> <strong> FISCAL </strong></option>
-                        </select><br>
+                        </select>
 
-                        <label for="setor"> <strong> PARA:: </strong></label>
-                        <select class="form-control" id="user-type" name="user-type">
+                        <label for="setor" class="form-txt"> <strong> PARA:: </strong></label>
+                        <select class="form1" id="user-type" name="user-type">
                             
                             <option value="setor"> <strong> AMBULATORIO </strong></option>
                             <option value="setor"> <strong> COMPRAS </strong></option>
@@ -100,12 +102,12 @@
 
                         <!-- data do formulario  -->
 
-                        <label for="data"> <strong> Data: </strong></label>
+                        <label for="data" class="form-txt" > <strong> Data: </strong></label>
                         <input type="date" name="data" id="data" class="form-control" required><br>
 
                         <!-- hora que está sendo feito o formulario -->
 
-                        <label for="hora"> <strong> Hora:</strong></label>
+                        <label for="hora" class="form-txt"> <strong> Hora:</strong></label>
                         <input type="time" name="hora" id="hora" class="form-control" required><br> 
 
                         <!-- tipos ds itens que seram adicionados no formulario  -->
@@ -142,7 +144,7 @@
 
                         <!-- se retorna ou não  -->
 
-                        <label for="itens"> <strong> Itens: </strong></label> 
+                        <label for="itens" class="form-txt"> <strong> Itens: </strong></label> 
 
                 <input class="form-control"  type="text" id="taskInput" placeholder="Digite uma nova tarefa"> <br>
                 <button class="btn_user " onclick="addTask()">
@@ -151,7 +153,7 @@
                
                 <ul id="taskList">
                 </ul>
-                          <label for=""> <strong> RETORNA: </strong> </label><br>
+                          <label for="" class="form-txt"> <strong> RETORNA: </strong> </label><br>
 
                         <label class="checkbox-container">
                             <input type="checkbox" />
@@ -163,7 +165,10 @@
 </html>
                 <button class="button-imp" onclick="window.print()"><img src="img/imagem de uma impresora.png" alt=""></button>
             </div>
-            <textarea name="" class="bloco-txt" cols="30" rows="10"></textarea>
+            <!-- <textarea name="" class="bloco-txt" cols="30" rows="10"></textarea> -->
+            <label for="data" class="form-txt"> <strong> Assinatura </strong></label><br>
+            <input type="text" name="data" id="data" class="form-control2" required><br>
+
             
 </body>
 
