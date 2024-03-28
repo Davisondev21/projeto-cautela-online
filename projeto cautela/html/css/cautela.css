@@ -134,6 +134,7 @@ img {
   .form1{
     width: 30%;
     padding: 7px ;
+    border-radius: 6px;
   }
   .form-control{
     width: 75%;
