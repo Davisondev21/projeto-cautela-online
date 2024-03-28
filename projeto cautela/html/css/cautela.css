@@ -156,5 +156,8 @@ img {
 	background-color:	rgba(226, 7, 7, 0.752);
 	transition:	.25s;
   }
-
+.footer{
+  font-size: 14px;
+  margin-top:  10px; 
+}
   
