@@ -4,7 +4,7 @@ function addTask() {
 
     if (taskInput.value.trim() !== "") {
         let taskItem = document.createElement("li");
-        taskItem.innerHTML = taskInput.value + ' <button  onclick="deleteTask(this)">Apagar</button>';
+        taskItem.innerHTML = taskInput.value + ' <button class="form-control3"onclick="deleteTask(this)">Apagar</button>';
         taskList.appendChild(taskItem);
         taskInput.value = "";
     } else {
