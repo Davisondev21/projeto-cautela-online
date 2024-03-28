@@ -42,18 +42,20 @@
             <div>
                 <fieldset>
 
-                    <h1 class="category"><strong> CAUTELA ONLINE </strong></h1>
+                    <h1 class="category"><strong> CAUTELA ONLINE </strong> </h1>
 
                     <form class="full-form" method="post" id="cautela-form">
 
-                        <label for="data" class="form-txt"> <strong> Responsável</strong></label><br>
-            <input type="text" name="data" id="data" class="form-control" required><br>
+                        <label  for="data" class="form-txt"> <strong> RESPONSÁVEL:</strong> 
+                            <span  class="obrigatorio">*</span></label><br>
+            <input type="text"   minlength="1" maxlength="30" required  name="data" id="data" class="form-control" placeholder="Digite seu nome" required><br>
 
-            <label for="data" class="form-txt"> <strong> Descrição/Anotação  </strong></label><br>
-            <input type="text" name="data" id="data" class="form-control" required><br>
+            <label for="data" class="form-txt"> <strong> DESCRIÇÃO/ANOTAÇÃO:  </strong></label><br>
+            <input type="text" name="data" id="data" class="form-control" placeholder="Digite uma descrição" required><br>
 
                         <!-- SETORES DA EMPRESA  -->
                         <label for="setor" class="form-txt"> <strong> DE: </strong> <br><br></label>                       <select class="form1" id="user-type" name="user-type">
+                            
                             
                             <option value="setor"> <strong> T.I </strong></option>
                             <option value="setor"> <strong> AMBULATORIO </strong></option>
@@ -76,10 +78,12 @@
                             <option value="setor"> <strong> RH </strong></option>
                             <option value="setor"> <strong> SESMT </strong></option>
                             <option value="setor"> <strong> FISCAL </strong></option>
+                            <option value="setor"> Selecione um Setor </option>
                         </select>
 
                         <label for="setor" class="form-txt"> <strong> PARA:</strong> <br> <br></label>
                         <select class="form1" id="user-type" name="user-type">
+                            
                             
                             <option value="setor"> <strong> T.I </strong></option>
                             <option value="setor"> <strong> DESENVOLVIMENTO </strong></option>
@@ -103,6 +107,7 @@
                             <option value="setor"> <strong> RH </strong></option>
                             <option value="setor"> <strong> SESMT </strong></option>
                             <option value="setor"> <strong> FISCAL </strong></option>
+                            <option value="setor"> Selecione um Setor </option>
                         </select><br><br>
 
 
@@ -119,7 +124,9 @@
                        <label for="hora" class="form-txt"> <strong> propriedade :</strong></label>
 
                              <select class="form-control" id="user-type" name="user-type">
+                                
                                 <option value="padrao"> <strong> CALLIDUS </strong></option>
+                                <option value="padrao"> <strong>Selecione</option>
                                 <option value="gestor"> <strong> TECTOY </strong></option>
                                 <option value="admin"> <strong> VICTUM </strong></option>
                                 <option value="admin"> <strong> ETTERA</strong></option>
@@ -155,7 +162,7 @@
                           
                 </fieldset>
 </html>
-                <button class="button-imp" onclick="window.print()"><img src="img/imagem de uma impresora.png" alt=""></button>
+                <button class="button-imp" onclick="window.print()">Impirmir Cautela</button>
             </div>
             <!-- <textarea name="" class="bloco-txt" cols="30" rows="10"></textarea> -->
             
