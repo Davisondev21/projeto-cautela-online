@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cautela </title>
+    <title>Cautela Online </title>
+
+    <!-- IMPORTAÇÃO DO ARQUIVO BOOTSTRAP PARA O CSS -->
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
     <!-- link para importação do css -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -21,11 +24,14 @@
             <div>   
                 <fieldset>
 
-                    <h1 class="category"><strong> CAUTELA ONLINE </strong></h1><br>
+                    <h1 class="category"><strong> CAUTELA ONLINE </strong></h1>
 
                     <form class="full-form" method="post" id="cautela-form">
 
-                        <label for="data" class="form-txt"> <strong> Funcionario  </strong></label><br>
+                        <label for="data" class="form-txt"> <strong> Responsável</strong></label><br>
+            <input type="text" name="data" id="data" class="form-control" required><br>
+
+            <label for="data" class="form-txt"> <strong> Descrição/Anotação  </strong></label><br>
             <input type="text" name="data" id="data" class="form-control" required><br>
 
                         <!-- SETORES DA EMPRESA  -->
@@ -79,17 +85,17 @@
                             <option value="setor"> <strong> RH </strong></option>
                             <option value="setor"> <strong> SESMT </strong></option>
                             <option value="setor"> <strong> FISCAL </strong></option>
-                        </select><br>
+                        </select><br><br>
 
 
                         <!-- data do formulario  -->
 
-                        <label for="data" class="form-txt" > <strong> Data: </strong></label>
-                        <input type="date" name="data" id="data" class="form-control" required><br>
+                        <label for="data" class="form-txt" > <strong> Data: </strong><br><br></label>
+                        <input type="date" name="data" id="data" class="form1" required>
 
 
-                        <label for="hora" class="form-txt"> <strong> Hora:</strong></label>
-                        <input type="time" name="hora" id="hora" class="form-control" required><br> 
+                        <label for="hora" class="form-txt"> <strong> Hora:</strong><br><br></label>
+                        <input type="time" name="hora" id="hora" class="form1" required><br><br>
 
                        <label for="hora" class="form-txt"> <strong> propriedade :</strong></label>
 
@@ -106,17 +112,17 @@
 
                         <label for="itens" class="form-txt"> <strong> Itens: </strong></label> 
 
-                <input class="form-control"  type="text" id="taskInput" placeholder="Digite um novo iten"> <br>
+                <input class="form-control"  type="text" id="taskInput" placeholder="Digite um novo item"> <br>
                 <button class="btn_user " onclick="addTask()">
                     <img src="img/imagem de um mais.png" alt="">
                     </button>
                
                 <ul id="taskList">
                 </ul>
-                <label for="data" class="form-txt"> <strong> Assinatura: </strong> <br><br><br></label>
+                <label for="data" class="form-txt"> <strong> portador: </strong><br>assinatura/carimbo <br><br><br></label>
             <input type="text" name="data" id="data" class="form-control1" required>
 
-            <label for="data" class="form-txt"> <strong> Carimbo:</strong> <br><br> <br></label>
+            <label for="data" class="form-txt"> <strong> Autorizado Por:</strong> <br>assinatura/carimbo<br> <br></label>
             <input type="text" name="data" id="data" class="form-control1" required><br>
                           <label for="" class="form-txt"> <strong> RETORNA: </strong> </label><br>
 

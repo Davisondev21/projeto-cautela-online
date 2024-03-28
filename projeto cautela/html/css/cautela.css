@@ -132,8 +132,9 @@ img {
   }
   
   .form1{
-    width: 35%;
-    padding: 8px ;
+    width: 30%;
+    padding: 7px ;
+    border-radius: 6px;
   }
   .form-control{
     width: 75%;
@@ -155,3 +156,5 @@ img {
 	background-color:	rgba(226, 7, 7, 0.752);
 	transition:	.25s;
   }
+
+  
