@@ -1,5 +1,10 @@
 body {
     background-image: linear-gradient(to right, rgba(0, 138, 23, 0.836), rgb(0, 46, 6));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
  
 h1 {
@@ -139,4 +144,8 @@ img {
   }
   .button-imp{
     margin-left: 15px;
+  }
+
+  strong {
+    align-self: flex-start;
   }
