@@ -139,6 +139,12 @@ img {
   .form-txt{
     margin-left:15px;
   }
+  .form-txt1{
+    margin-left:75px;
+  }
+  .form-txt2{
+    margin-left:190px;
+  }
     .form-control3{
      border-radius: 6px;
     background-color: rgb(185, 178, 178);
@@ -185,4 +191,23 @@ img {
     width: 10%;
   }
   
+}
+
+.meid {
+  width: 200px;
+  height: 100px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 6px;
+  background-color: white;
+  margin-left: 50px;
+  margin-top: -5px;}
+
+.meuid{
+  width: 200px;
+  height: 100px;
+  border: solid 2px black;
+  border-radius: 6px;
+  background-color: white;
+  margin-top: -100px;
+  margin-left: 400px;
 }
