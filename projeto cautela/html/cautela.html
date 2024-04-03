@@ -21,22 +21,36 @@
     <main>
 
         <div class="box">
-            <div>   
+            
                 <fieldset>
 
-                    <h1 class="category"><strong> CAUTELA ONLINE </strong></h1>
+                    <h1 class="category"><strong> CAUTELA ONLINE </strong> </h1>
 
                     <form class="full-form" method="post" id="cautela-form">
 
-                        <label for="data" class="form-txt"> <strong> Responsável</strong></label><br>
-            <input type="text" name="data" id="data" class="form-control" required><br>
+                        <label  for="data" class="form-txt"> <strong> RESPONSÁVEL:</strong> 
+                            <span  class="obrigatorio">*</span></label>
+            <input type="text"  minlength="1" maxlength="30" class="form-control" placeholder="Digite seu nome" required><br>
 
-            <label for="data" class="form-txt"> <strong> Descrição/Anotação  </strong></label><br>
-            <input type="text" name="data" id="data" class="form-control" required><br>
+            <label for="hora" class="form-txt"> <strong> propriedade :</strong></label><br>
+
+                             <select class="form-control" id="user-type" name="user-type">
+                                
+                                <option value="padrao"> <strong> CALLIDUS </strong></option>
+                                <option value="padrao"> <strong>Selecione</option>
+                                <option value="gestor"> <strong> TECTOY </strong></option>
+                                <option value="admin"> <strong> VICTUM </strong></option>
+                                <option value="admin"> <strong> ETTERA</strong></option>
+                                <option value="admin"> <strong> AMAZONAS INOVARE </strong></option>
+                                <option value="admin"> <strong> TÁ NA PORTA </strong></option>
+                            </select><br>
+
+            
 
                         <!-- SETORES DA EMPRESA  -->
-                        <label for="setor" class="form-txt"> <strong class="de_para"> DE: </strong> <br><br></label>                       
+                        <label for="setor" class="form-txt"> <strong> DE: </strong> <br><br></label>
                         <select class="form1" id="user-type" name="user-type">
+                            
                             
                             <option value="setor"> <strong> T.I </strong></option>
                             <option value="setor"> <strong> AMBULATORIO </strong></option>
@@ -59,11 +73,13 @@
                             <option value="setor"> <strong> RH </strong></option>
                             <option value="setor"> <strong> SESMT </strong></option>
                             <option value="setor"> <strong> FISCAL </strong></option>
+                            <option value="setor"> Selecione um Setor </option>
                         </select>
                         <label for="setor" class="form-txt"></label>
                         <strong>para</strong> 
                     
                         <select class="form1" id="user-type" name="user-type">
+                            
                             
                             <option value="setor"> <strong> T.I </strong></option>
                             <option value="setor"> <strong> DESENVOLVIMENTO </strong></option>
@@ -87,6 +103,7 @@
                             <option value="setor"> <strong> RH </strong></option>
                             <option value="setor"> <strong> SESMT </strong></option>
                             <option value="setor"> <strong> FISCAL </strong></option>
+                            <option value="setor"> Selecione um Setor </option>
                         </select><br><br>
 
 
@@ -99,25 +116,17 @@
                         <label for="hora" class="form-txt"> <strong> Hora:</strong><br><br></label>
                         <input type="time" name="hora" id="hora" class="form1" required><br><br>
 
-                       <label for="hora" class="form-txt"> <strong> propriedade :</strong></label>
-
-                             <select class="form-control" id="user-type" name="user-type">
-                                <option value="padrao"> <strong> CALLIDUS </strong></option>
-                                <option value="gestor"> <strong> TECTOY </strong></option>
-                                <option value="admin"> <strong> VICTUM </strong></option>
-                                <option value="admin"> <strong> ETTERA</strong></option>
-                                <option value="admin"> <strong> AMAZONAS INOVARE </strong></option>
-                                <option value="admin"> <strong> TÁ NA PORTA </strong></option>
-                            </select><br>
+                            <label for="data" class="form-txt"> <strong> DESCRIÇÃO/ANOTAÇÃO:  </strong></label><br>
+            <input type="text" name="data" id="data" class="form-control" placeholder="Digite uma descrição" required><br>
 
                         <!-- se retorna ou não  -->
 
                         <label for="itens" class="form-txt"> <strong> Itens: </strong></label> 
 
                 <input class="form-control"  type="text" id="taskInput" placeholder="Digite um novo item"> <br>
-                <button class="btn_user " onclick="addTask()">
-                    <img src="img/imagem de um mais.png" alt="">
-                    </button>
+                <button class="form-control3" onclick="addTask()"> adicionar item
+                    <!-- <img src="img/imagem de um mais.png" alt=""> -->
+                    </button><br><br>
                
                 <ul id="taskList">
                 </ul>
@@ -128,21 +137,28 @@
             <input type="text" name="data" id="data" class="form-control1" required><br>
                           <label for="" class="form-txt"> <strong> RETORNA: </strong> </label><br>
 
-                            <label class="container">
-                            <input checked="checked" type="checkbox">
-                            </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox" />
+                            <span class="checkmark">sim</span>
+                          </label> 
                           <br>
                           <br>
-
-                          
+                          <button class="form-control3" onclick="window.print()">Impirmir Cautela</button>
+                        </form> 
                 </fieldset>
-</html>
-                <button class="button-imp" onclick="window.print()"><img src="img/imagem de uma impresora.png" alt=""></button>
+
+                
             </div>
             <!-- <textarea name="" class="bloco-txt" cols="30" rows="10"></textarea> -->
             
-        </form>
-            
+        
+       
+        <footer>
+            <!-- <p class="footer">
+                desenvolvido por: Davison Montenegro & Weverton Blanco
+            </p> -->
+        </footer>
+
 </body>
 
 </html>

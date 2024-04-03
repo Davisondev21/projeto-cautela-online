@@ -5,23 +5,17 @@ body {
   align-items: center;
 }
  .box{
-  border: solid 1px rgb(118, 118, 118);
-  background-color: #ccc;
+  border: solid 2px rgba(255, 255, 255, 0.514);
+  background-color: #dfd9e9;
   margin-top: 5px;
+  box-shadow: 4px 4px  0.55em #00000091;
  }
 h1 {
-  
     margin-left: 19%;
     font-size: 40px;
 }
  
-.btn_user {
-        width: -1px;
-        border: none; /* Remove a borda do botão */
-        border-radius: 30px; /*Borda arredondada */
-        cursor: pointer;
-        margin-left: 15px;
-}
+
 img {
     border-radius: 50px;
     width: 5vh; /* Diminui a largura da imagem para 70px do tamanho original */
@@ -81,6 +75,7 @@ img {
     transition: all 0.3s ease; /* Add smooth transition */
   }
   
+  
   /* Show the checkmark when checkbox is checked */
   .checkbox-container input:checked ~ .checkmark:after {
     display: block;
@@ -135,6 +130,7 @@ img {
     width: 30%;
     padding: 7px ;
     border-radius: 6px;
+   
   }
   .form-control{
     width: 75%;
@@ -143,18 +139,50 @@ img {
   .form-txt{
     margin-left:15px;
   }
-  .button-imp{
-    margin-left: 15px;
-  }
-  .form-control3{
+    .form-control3{
      border-radius: 6px;
-    background-color: rgb(231, 9, 9);
+    background-color: rgb(185, 178, 178);
     color: black;
+  margin-left: 15px;  
   }
   .form-control3:hover{
-    transform:	translate(0,	.22rem);
-	background-color:	rgba(226, 7, 7, 0.752);
+    /* transform:	translate(0,	.22rem); */
+    font-size: 17px;
+	background-color:	rgba(121, 118, 118, 0.752);
 	transition:	.25s;
   }
-
+.footer{
+  font-size: 14px;
+  margin-top:  10px; 
+}
   
+@media(max-width: 695px){
+
+  .form-control1{
+    width: 24%;
+  }
+  
+}
+@media(max-width: 670px){
+
+  .form-control1{
+    width: 23%;
+  }
+  
+}
+
+@media(max-width: 645px){
+
+  .form-control1{
+    width: 20%;
+  }
+  
+}
+
+@media(max-width: 622px){
+
+  .form-control1{
+    width: 10%;
+  }
+  
+}
