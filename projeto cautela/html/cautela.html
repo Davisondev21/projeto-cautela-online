@@ -47,14 +47,27 @@
                     <form class="full-form" method="post" id="cautela-form">
 
                         <label  for="data" class="form-txt"> <strong> RESPONSÁVEL:</strong> 
-                            <span  class="obrigatorio">*</span></label><br>
-            <input type="text"   minlength="1" maxlength="30" required  name="data" id="data" class="form-control" placeholder="Digite seu nome" required><br>
+                            <span  class="obrigatorio">*</span></label>
+            <input type="text"  minlength="1" maxlength="30" class="form-control" placeholder="Digite seu nome" required><br>
 
-            <label for="data" class="form-txt"> <strong> DESCRIÇÃO/ANOTAÇÃO:  </strong></label><br>
-            <input type="text" name="data" id="data" class="form-control" placeholder="Digite uma descrição" required><br>
+            <label for="hora" class="form-txt"> <strong> propriedade :</strong></label><br>
+
+                             <select class="form-control" id="user-type" name="user-type">
+                                
+                                <option value="padrao"> <strong> CALLIDUS </strong></option>
+                                <option value="padrao"> <strong>Selecione</option>
+                                <option value="gestor"> <strong> TECTOY </strong></option>
+                                <option value="admin"> <strong> VICTUM </strong></option>
+                                <option value="admin"> <strong> ETTERA</strong></option>
+                                <option value="admin"> <strong> AMAZONAS INOVARE </strong></option>
+                                <option value="admin"> <strong> TÁ NA PORTA </strong></option>
+                            </select><br>
+
+            
 
                         <!-- SETORES DA EMPRESA  -->
-                        <label for="setor" class="form-txt"> <strong> DE: </strong> <br><br></label>                       <select class="form1" id="user-type" name="user-type">
+                        <label for="setor" class="form-txt"> <strong> DE: </strong> <br><br></label>
+                        <select class="form1" id="user-type" name="user-type">
                             
                             
                             <option value="setor"> <strong> T.I </strong></option>
@@ -121,27 +134,17 @@
                         <label for="hora" class="form-txt"> <strong> Hora:</strong><br><br></label>
                         <input type="time" name="hora" id="hora" class="form1" required><br><br>
 
-                       <label for="hora" class="form-txt"> <strong> propriedade :</strong></label>
-
-                             <select class="form-control" id="user-type" name="user-type">
-                                
-                                <option value="padrao"> <strong> CALLIDUS </strong></option>
-                                <option value="padrao"> <strong>Selecione</option>
-                                <option value="gestor"> <strong> TECTOY </strong></option>
-                                <option value="admin"> <strong> VICTUM </strong></option>
-                                <option value="admin"> <strong> ETTERA</strong></option>
-                                <option value="admin"> <strong> AMAZONAS INOVARE </strong></option>
-                                <option value="admin"> <strong> TÁ NA PORTA </strong></option>
-                            </select><br>
+                            <label for="data" class="form-txt"> <strong> DESCRIÇÃO/ANOTAÇÃO:  </strong></label><br>
+            <input type="text" name="data" id="data" class="form-control" placeholder="Digite uma descrição" required><br>
 
                         <!-- se retorna ou não  -->
 
                         <label for="itens" class="form-txt"> <strong> Itens: </strong></label> 
 
                 <input class="form-control"  type="text" id="taskInput" placeholder="Digite um novo item"> <br>
-                <button class="btn_user " onclick="addTask()">
-                    <img src="img/imagem de um mais.png" alt="">
-                    </button>
+                <button class="form-control3" onclick="addTask()"> adicionar item
+                    <!-- <img src="img/imagem de um mais.png" alt=""> -->
+                    </button><br><br>
                
                 <ul id="taskList">
                 </ul>
@@ -154,15 +157,15 @@
 
                         <label class="checkbox-container">
                             <input type="checkbox" />
-                            <span class="checkmark"></span>
-                          </label>
+                            <span class="checkmark">sim</span>
+                          </label> 
                           <br>
                           <br>
 
                           
                 </fieldset>
 </html>
-                <button class="button-imp" onclick="window.print()">Impirmir Cautela</button>
+                <button class="form-control3" onclick="window.print()">Impirmir Cautela</button>
             </div>
             <!-- <textarea name="" class="bloco-txt" cols="30" rows="10"></textarea> -->
             

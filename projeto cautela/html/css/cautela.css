@@ -82,6 +82,7 @@ img {
     transition: all 0.3s ease; /* Add smooth transition */
   }
   
+  
   /* Show the checkmark when checkbox is checked */
   .checkbox-container input:checked ~ .checkmark:after {
     display: block;
@@ -136,6 +137,7 @@ img {
     width: 30%;
     padding: 7px ;
     border-radius: 6px;
+   
   }
   .form-control{
     width: 75%;
@@ -150,12 +152,13 @@ img {
   }
   .form-control3{
      border-radius: 6px;
-    background-color: rgb(231, 9, 9);
+    background-color: rgb(185, 178, 178);
     color: black;
   }
   .form-control3:hover{
-    transform:	translate(0,	.22rem);
-	background-color:	rgba(226, 7, 7, 0.752);
+    /* transform:	translate(0,	.22rem); */
+    font-size: 17px;
+	background-color:	rgba(121, 118, 118, 0.752);
 	transition:	.25s;
   }
 .footer{
