@@ -11,18 +11,11 @@ body {
   box-shadow: 3px 3px 0.45em #00000091;
  }
 h1 {
-  
     margin-left: 19%;
     font-size: 40px;
 }
  
-.btn_user {
-        width: -1px;
-        border: none; /* Remove a borda do botão */
-        border-radius: 30px; /*Borda arredondada */
-        cursor: pointer;
-        margin-left: 15px;
-}
+
 img {
     border-radius: 50px;
     width: 5vh; /* Diminui a largura da imagem para 70px do tamanho original */
@@ -146,14 +139,11 @@ img {
   .form-txt{
     margin-left:15px;
   }
-  .button-imp{
-    margin-left: 15px;
-    background-color: #f0ebf8;
-  }
-  .form-control3{
+    .form-control3{
      border-radius: 6px;
     background-color: rgb(185, 178, 178);
     color: black;
+  margin-left: 15px;  
   }
   .form-control3:hover{
     /* transform:	translate(0,	.22rem); */
