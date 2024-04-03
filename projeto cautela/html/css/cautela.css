@@ -5,10 +5,10 @@ body {
   align-items: center;
 }
  .box{
-  border: solid 3px rgb(201, 201, 201);
+  border: solid 2px rgba(255, 255, 255, 0.514);
   background-color: #dfd9e9;
   margin-top: 5px;
-  box-shadow: 3px 3px 0.45em #00000091;
+  box-shadow: 4px 4px  0.55em #00000091;
  }
 h1 {
     margin-left: 19%;
