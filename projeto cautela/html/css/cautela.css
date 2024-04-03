@@ -163,3 +163,33 @@ img {
   margin-top:  10px; 
 }
   
+@media(max-width: 695px){
+
+  .form-control1{
+    width: 24%;
+  }
+  
+}
+@media(max-width: 670px){
+
+  .form-control1{
+    width: 23%;
+  }
+  
+}
+
+@media(max-width: 645px){
+
+  .form-control1{
+    width: 20%;
+  }
+  
+}
+
+@media(max-width: 622px){
+
+  .form-control1{
+    width: 10%;
+  }
+  
+}
