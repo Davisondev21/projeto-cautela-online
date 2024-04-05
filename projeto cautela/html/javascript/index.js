@@ -16,6 +16,9 @@ function deleteTask(task) {
     task.parentNode.remove();
 }
 
+function limparFormulario() {
+    document.getElementById("meuForm").reset();
+}
 function addoptions (elId, options){
     // const options = sectors;
 
