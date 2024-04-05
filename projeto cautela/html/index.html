@@ -20,38 +20,44 @@
 </head>
 
 <body>
+  <!-- inicio da box da cautela  -->
   <div class="box">
     <fieldset>
+      <!-- titulo da cautela  -->
+      <div class="row">
+      <div class="col-12" >
       <h1 class="category"><strong> CAUTELA ONLINE </strong></h1>
-
       <form class="full-form" id="cautela">
+      </div>
+    </div>
+        <!-- quem esta responsavel pela cautela  -->
         <div class="de">
           <label for="data" class="form-txt">
             <strong> RESPONSÁVEL:</strong>
-            <!-- <span  class="obrigatorio">*</span>-->
+            <span class="obrigatorio">*</span>
           </label>
           <input type="text" minlength="1" maxlength="30" class="form-control" placeholder="Digite seu nome" required /><br />
         </div>
+        <!-- a quem pertence a cautla  -->
         <div class="de-1">
           <label for="hora" class="form-txt">
-            <strong> PROPRIEDADE:</strong></label><br />
-
+            <strong> PROPRIEDADE:</strong>
+            <span class="obrigatorio">*</span>
+          </label><br />
           <select class="form-control" id="user-type3" name="user-type"></select>
         </div>
-
-        <!-- SETORES DA EMPRESA  -->
+        <!-- de onde o material ta saindo  -->
         <div class="de3">
           <label for="setor" class="form-txt">
             <strong> DE: </strong> <br /><br />
           </label>
         </div>
-
         <div class="de3-1">
           <select class="form1" id="user-type2" name="user-type">
             <option value="setor">Selecione um Setor</option>
           </select>
         </div>
-
+        <!-- para onde o material ta indo  -->
         <div class="de4">
           <label for="setor" class="form-txt">
             <strong> PARA:</strong> <br />
@@ -77,42 +83,36 @@
             <strong> HORA:</strong><br /><br />
           </label>
         </div>
-
         <div class="de6-1">
           <input type="time" name="hora" id="hora" class="form1" required /><br /><br />
         </div>
-
+        <!-- alguma descrição a ser feita do material  -->
         <label for="data" class="form-txt">
-          <strong> DESCRIÇÃO: </strong></label><br />
+          <strong> DESCRIÇÃO: </strong>
+          <span class="obrigatorio">*</span>
+        </label><br />
+        <!--  -->
         <input type="text" name="data" id="data" class="form-control" placeholder="Digite uma descrição" required /><br />
-
-        <!-- se retorna ou não  -->
-
-        <label for="itens" class="form-txt"> <strong> ITEM: </strong></label>
-
-        <input class="form-control" type="text" id="taskInput" placeholder="Digite um novo item" />
+        <label for="itens" class="form-txt"> <strong> ITEM: </strong>
+          <span class="obrigatorio">*</span>
+        </label>
+        <input class="form-control" type="text" id="taskInput" placeholder="Digite um novo item" required />
         <br />
         <div class="bnt-add-item">
-          <button type="button" class="form-control3" onclick="addTask()">
+          <button type="button" class="form-control3-1" onclick="addTask()">
             adicionar item
           </button>
         </div>
         <br /><br />
-
         <ul class="list" id="taskList"></ul>
         <label for="data" class="form-txt1">
           <strong> portador: </strong><br />assinatura/carimbo <br /><br /></label>
-        <!-- <input type="text" name="data" id="data" class="form-control1" required> -->
-
         <label for="data" class="form-txt2">
           <strong> Autorizado Por:</strong> <br />assinatura/carimbo<br />
           <br /></label>
-        <!-- <input type="text" name="data" id="data" class="form-control1" required><br> -->
-
         <div class="meid"></div>
         <div class="meuid"></div>
         <label for="" class="form-txt"> <strong> RETORNA: </strong> </label><br />
-
         <label class="checkbox">
           <input type="checkbox" />
         </label>
@@ -127,37 +127,6 @@
       </form>
     </fieldset>
   </div>
-
-  <footer>
-    <!-- <p class="footer">
-        desenvolvido por: Davison Montenegro & Weverton Blanco
-        </p> -->
-  </footer>
-
-  <!-- <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-4 col-lg-2 col-xl-3">
-                davison 
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-2 col-xl-3">
-                davison 
-            </div> 
-            <div class="col-sm-6 col-md-4 col-lg-2 col-xl-3">
-                davison 
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-2 col-xl-3">
-                davison 
-            </div>
-            
-        </div>
-
-    </div> -->
-  <!-- INICIO DO CABEÇALHO DA PAGINA -->
-
-
-
-  <!-- FIM DO CABEÇALHO DA PAGINA -->
 </body>
 
 </html>
