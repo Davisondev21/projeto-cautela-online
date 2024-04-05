@@ -11,6 +11,7 @@ body {
   background-color: #d9e7e971;
   margin-top: 25px;
   box-shadow: 4px 4px 0.55em #00000091;
+  border-radius: 10px;
 }
 /* tiulo da pagina  */
 h1 {

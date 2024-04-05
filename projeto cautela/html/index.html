@@ -112,10 +112,14 @@
           <br /></label>
         <div class="meid"></div>
         <div class="meuid"></div>
-        <label for="" class="form-txt"> <strong> RETORNA: </strong> </label><br />
+        <!-- <label for="" class="form-txt"> <strong> RETORNA: </strong> </label><br />
         <label class="checkbox">
           <input type="checkbox" />
-        </label>
+        </label> -->
+        <label for="aprovado">SIM</label>
+                        <input type="radio" name="status" id="aprovado" class="checkbox" value="SIM" required>
+                        <label for="reprovado">NÃO</label>
+                        <input type="radio" name="status" id="reprovado" class="checkbox" value="NAO" required> <br>
         <br />
         <br />
         <button class="form-control3" onclick="window.print()">
