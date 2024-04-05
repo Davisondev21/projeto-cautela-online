@@ -20,5 +20,15 @@ var  sectors = [
 "PCM ",
 "RH ",
 "SESMT ",
-"FISCA",
+"FISCAL",
+]
+
+var  propiedades = [
+"Selecione um ",
+"CALLIDUS",
+"TECTOY", 
+"VICTUM", 
+"ETTERA",
+"AMAZONAS INOVARE", 
+"TÁ NA PORTA"
 ]

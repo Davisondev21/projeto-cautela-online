@@ -1,123 +1,22 @@
+/* corpo da pagina  */
+
 body {
-    /* background-image: linear-gradient(to right, rgba(0, 138, 23, 0.836), rgb(0, 46, 6)); */
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
+/* box da pagina  */
  .box{
   border: solid 2px rgba(255, 255, 255, 0.514);
   background-color: #dfd9e9;
-  margin-top: 5px;
+  margin-top: 25px;
   box-shadow: 4px 4px  0.55em #00000091;
  }
+ /* tiulo da pagina  */
 h1 {
     margin-left: 19%;
     font-size: 40px;
 }
- 
-
-img {
-    border-radius: 50px;
-    width: 5vh; /* Diminui a largura da imagem para 70px do tamanho original */
- 
-}
-/* Estilos para telas de celular */
-@media only screen and (max-width: 600px) {
-    body {
-      font-size: 14px;
-    }
-    .container {
-      width: 100%;
-    }   
-  }
-  
-  /* Estilos para tablets */
-  @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    body {
-      font-size: 16px;
-    }
-  }
-  
-  /* Estilos para telas maiores */
-  @media only screen and (min-width: 1025px) {
-    body {
-      font-size: 18px;
-    }
-  }
-  
- 
-  .checkbox-container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-  }
-  
-  
-  .checkbox-container {
-    position: relative;
-    display: inline-block;
-    font-size: 18px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    margin-left: 15px;
-  }
-  
-  /* Style the checkmark */
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 30px; /* Make the checkbox slightly bigger */
-    width: 30px; /* Make the checkbox slightly bigger */
-    border: 2px solid #ccc; /* Add border for 3D effect */
-    border-radius: 6px; /* Round the corners */
-    background-color: #fff; /* Default color */
-    transition: all 0.3s ease; /* Add smooth transition */
-  }
-  
-  
-  /* Show the checkmark when checkbox is checked */
-  .checkbox-container input:checked ~ .checkmark:after {
-    display: block;
-    animation: checkboxExpand 0.3s ease forwards;
-  }
-  
-  /* Style the checkmark/indicator */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%) rotate(45deg) scale(0); /* Center and hide initially, then scale to appear */
-    width: 8px; /* Adjust size */
-    height: 15px; /* Adjust size */
-    border: solid #fff; /* Change color of the tick to white */
-    border-width: 0 4px 4px 0; /* Adjust thickness and direction */
-  }
-  
-  /* On hover, add a grey background color */
-  .checkbox-container:hover .checkmark {
-    background-color: #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
-    transform: scale(1.05); /* Scale up slightly */
-  }
-  
-  /* When the checkbox is checked, add a green background */
-  .checkbox-container input:checked ~ .checkmark {
-    background-color: #4caf50;
-    border-color: #4caf50; /* Change border color */
-    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Add shadow for 3D effect */
-  }
-  
-  @keyframes checkboxExpand {
-    0% {
-      transform: translate(-50%, -50%) rotate(45deg) scale(0);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(45deg) scale(1);
-    }
-  }
  
   .form-control1{
     width: 25%;
@@ -133,11 +32,11 @@ img {
    
   }
   .form-control{
-    width: 75%;
-    margin-left: 50px;
+    width: 55%;
+    margin-left: 60px;
   }
   .form-txt{
-    margin-left:50px;
+    margin-left:60px;
   }
   .form-txt1{
     margin-left:75px;
@@ -149,50 +48,14 @@ img {
      border-radius: 6px;
     background-color: rgb(185, 178, 178);
     color: black;
-  margin-left: 15px;  
-  }
+    margin-left: 45px;    
+    }
   .form-control3:hover{
     /* transform:	translate(0,	.22rem); */
     font-size: 17px;
 	background-color:	rgba(121, 118, 118, 0.752);
 	transition:	.25s;
-  }
-.footer{
-  font-size: 14px;
-  margin-top:  10px; 
-}
-  
-@media(max-width: 695px){
-
-  .form-control1{
-    width: 24%;
-  }
-  
-}
-@media(max-width: 670px){
-
-  .form-control1{
-    width: 23%;
-  }
-  
-}
-
-@media(max-width: 645px){
-
-  .form-control1{
-    width: 20%;
-  }
-  
-}
-
-@media(max-width: 622px){
-
-  .form-control1{
-    width: 10%;
-  }
-  
-}
-
+  }  
 .meid {
   width: 200px;
   height: 100px;
@@ -213,26 +76,58 @@ img {
 }
 .de{
   margin-left: 10px;
-  width: 50%;
+  width: 75%;
 }
 .de1{
   margin-left: 300px;
   margin-top: -90px;
-  width: 50%;
+  width: 75%;
 }
 .de3{
+  margin-left: 20px;
+  margin-top: 35px;
+ 
+}
+.de3-1{
   margin-left: 60px;
   width: 100%;
+  margin-top: -15px; 
+  
 }
 .de4{
-  margin-left: 350px;
-  margin-top: -70px;
+  margin-left: 300px;
+  margin-top: -85px;
   width: 100%;
 }
 .de4-1{
-  margin-top:-20px;
+  margin-top:-7px;
+  margin-left: 350px;
+  width: 100%;
 }
-
+.de5{
+  margin-left:15px;
+}
+.de5-1{
+  margin-left: 60px;
+}
+.de6{
+  margin-left: 300px;
+  margin-top: -80px;
+}
+.de6-1{
+  margin-left: 350px;
+  margin-top: -20px;
+  width: 100%;
+}
+.bnt-add-item{
+  margin-left: 400px;
+  margin-top: -60px;
+}
+.checkbox{
+  margin-left: 55px;
+  margin-top: 5px;
+  
+}
 
 
 

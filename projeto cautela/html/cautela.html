@@ -13,18 +13,11 @@
 
     <!-- link para importação do css -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <style>
-        .material-symbols-outlined {
-          font-variation-settings:
-          'FILL' 0,
-          'wght' 400,
-          'GRAD' 0,
-          'opsz' 24
-        }
-        </style>
     <link rel="stylesheet" href="css/cautela.css">
+    <!-- linkn para importação para o java script -->
     <script src="javascript/constantes.js"></script>
     <script src="javascript/index.js"></script>
+
 </head>
 
 <body>
@@ -35,80 +28,62 @@
         
             <h1 class="category"><strong> CAUTELA ONLINE </strong> </h1>
         
-        <form class="full-form" method="post" id="cautela-form">
-            <div class="de" >
-                <label  for="data" class="form-txt"> <strong> RESPONSÁVEL:</strong> 
-                    <!-- <span  class="obrigatorio">*</span>--></label> 
-                     
-                         <input type="text"  minlength="1" maxlength="30" class="form-control" placeholder="Digite seu nome" required><br>
-                     </div>
+                <form class="full-form" method="post" id="cautela-form">
+                  <div class="de" >
+                    <label  for="data" class="form-txt"> <strong> RESPONSÁVEL:</strong> 
+                    <!-- <span  class="obrigatorio">*</span>-->
+                    </label> 
+                    <input type="text"  minlength="1" maxlength="30" class="form-control" placeholder="Digite seu nome" required><br>
+                 </div>
         <div class="de1">                
         <label for="hora" class="form-txt"> <strong> PROPRIEDADE:</strong></label><br>
         
-                     <select class="form-control" id="user-type" name="user-type">
-                        
-                        <option value="padrao"> <strong> CALLIDUS </strong></option>
-                        <option value="padrao"> <strong>Selecione</option>
-                        <option value="gestor"> <strong> TECTOY </strong></option>
-                        <option value="admin"> <strong> VICTUM </strong></option>
-                        <option value="admin"> <strong> ETTERA</strong></option>
-                        <option value="admin"> <strong> AMAZONAS INOVARE </strong></option>
-                        <option value="admin"> <strong> TÁ NA PORTA </strong></option>
-                    </select><br>
+                     <select class="form-control" id="user-type3" name="user-type">
+                    </select>
                 </div>
         
         
                 <!-- SETORES DA EMPRESA  -->
                 <div class="de3">
-                <label for="setor" class="form-txt"> <strong> DE: </strong> <br><br></label><br>
-                <div class="de4-1">
+                <label for="setor" class="form-txt"> 
+                <strong> DE: </strong> <br><br>
+                </label>
+                </div>
+
+                <div class="de3-1">
                 <select class="form1" id="user-type2" name="user-type">
-                                      
-                    <!-- <option value="setor"> <strong> T.I </strong></option>
-                    <option value="setor"> <strong> AMBULATORIO </strong></option>
-                    <option value="setor"> <strong> COMPRAS </strong></option>
-                    <option value="setor"> <strong> CONTROLADORIA </strong></option>
-                    <option value="setor"> <strong> ENGENHARIA DE PRODUTO </strong></option>
-                    <option value="setor"> <strong> ENGENHARIA DE TESTE/PROCESSO </strong></option>
-                    <option value="setor"> <strong> ESTOQUE </strong></option>
-                    <option value="setor"> <strong> EXPEDIÇÃO </strong></option>
-                    <option value="setor"> <strong> IMPORTAÇÃO </strong></option>
-                    <option value="setor"> <strong> SMT </strong></option>
-                    <option value="setor"> <strong> ÁREA TECNICA </strong></option>
-                    <option value="setor"> <strong> RECEBIMENTO</strong></option>
-                    <option value="setor"> <strong> FACILITES </strong></option>
-                    <option value="setor"> <strong> SEGURANÇA E MONITORAMENTO </strong></option>
-                    <option value="setor"> <strong> QUALIDADE </strong></option>
-                    <option value="setor"> <strong> CERTIFICAÇÕES </strong></option>
-                    <option value="setor"> <strong> PCP </strong></option>
-                    <option value="setor"> <strong> PCM </strong></option>
-                    <option value="setor"> <strong> RH </strong></option>
-                    <option value="setor"> <strong> SESMT </strong></option>
-                    <option value="setor"> <strong> FISCAL </strong></option>-->
                     <option value="setor"> Selecione um Setor </option> 
                 </select>
             </div>
-            </div>
+            
             <div class="de4">
-                <label for="setor" class="form-txt"> <strong> PARA:</strong> <br> <br></label><br>
+                <label for="setor" class="form-txt">
+                 <strong> PARA:</strong> <br> <br>
+                </label><br>
+            </div>
+
                 <div class="de4-1">
                 <select class="form1" id="user-type1" name="user-type">
-                                              
-                    
                     <option value="setor"> Selecione um Setor </option>
                 </select><br><br>
             </div>
-            </div>
-        
                 <!-- data do formulario  -->
-        
-                <label for="data" class="form-txt" > <strong> DATA: </strong><br><br></label>
+            <div class="de5">
+                <label for="data" class="form-txt" > <strong> DATA: </strong><br></label>
+            </div>
+            <div class="de5-1">
                 <input type="date" name="data" id="data" class="form1" required>
-        
+            </div>
                 <!-- hora que está sendo feito o formulario -->
-        
-                <label for="hora" class="form-txt"> <strong> HORA:</strong><br><br></label>
+            <div class="de6">
+                <label for="hora" class="form-txt">
+                <strong> HORA:</strong><br><br>
+                </label>
+            </div>
+
+            <div class="de6-1">
                 <input type="time" name="hora" id="hora" class="form1" required><br><br>
+            </div>
         
                     <label for="data" class="form-txt"> <strong> DESCRIÇÃO: </strong></label><br>
         <input type="text" name="data" id="data" class="form-control" placeholder="Digite uma descrição" required><br>
@@ -118,9 +93,10 @@
                 <label for="itens" class="form-txt"> <strong> ITEM: </strong></label> 
         
         <input class="form-control"  type="text" id="taskInput" placeholder="Digite um novo item"> <br>
-        <button class="form-control3" onclick="addTask()"> adicionar item
-            <!-- <img src="img/imagem de um mais.png" alt=""> -->
-            </button><br><br>
+        <div class="bnt-add-item">
+            <button class="form-control3" onclick="addTask()"> adicionar item
+        </div>
+           </button><br><br>
         
         <ul id="taskList">
         </ul>
@@ -137,10 +113,9 @@
         </div>
                   <label for="" class="form-txt"> <strong> RETORNA: </strong> </label><br>
         
-                <label class="checkbox-container">
+                <label class="checkbox">
                     <input type="checkbox" />
-                    <span class="checkmark"></span>
-                  </label> 
+                </label> 
                   <br>
                   <br>
                   <button class="form-control3" onclick="window.print()">Impirmir Cautela</button>
