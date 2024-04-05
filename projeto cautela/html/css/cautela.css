@@ -75,13 +75,12 @@ h1 {
   margin-left: 400px;
 }
 .de{
-  margin-left: 10px;
-  width: 75%;
+  width: 60%;
 }
-.de1{
-  margin-left: 300px;
+.de-1{
+  margin-left: 290px;
   margin-top: -90px;
-  width: 75%;
+  width: 60%;
 }
 .de3{
   margin-left: 20px;
@@ -96,7 +95,7 @@ h1 {
 }
 .de4{
   margin-left: 300px;
-  margin-top: -85px;
+  margin-top: -75px;
   width: 100%;
 }
 .de4-1{
@@ -112,7 +111,7 @@ h1 {
 }
 .de6{
   margin-left: 300px;
-  margin-top: -80px;
+  margin-top: -65px;
 }
 .de6-1{
   margin-left: 350px;
@@ -128,7 +127,9 @@ h1 {
   margin-top: 5px;
   
 }
-
+.list{
+  margin-left: 55px;
+}
 
 
 
