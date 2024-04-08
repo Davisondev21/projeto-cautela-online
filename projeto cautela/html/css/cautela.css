@@ -72,7 +72,7 @@ h1 {
   border: 2px solid rgb(0, 0, 0);
   border-radius: 6px;
   background-color: white;
-  margin-left: 50px;
+  margin-left: 20px;
   margin-top: -5px;
 }
 /* div carimbo 2 */
@@ -82,8 +82,7 @@ h1 {
   border: solid 2px black;
   border-radius: 6px;
   background-color: white;
-  margin-top: -0px;
-  margin-left: 100px;
+  margin-left: 20px;
 }
 .de {
   width: 60%;
@@ -129,10 +128,7 @@ h1 {
   width: 100%;
 }
 /* button add item na liseta de tarefas  */
-.bnt-add-item {
-  margin-left: 600px;
-  margin-top: -60px;
-}
+
 /* checkbos retorna or no  */
 .checkbox {
   margin-left: 55px;
@@ -145,7 +141,7 @@ h1 {
 }
 /* button limpar form */
 .limpar {
-  margin-left: 240px;
+  margin-left: 40px;
   border-radius: 6px;
   background-color: rgb(185, 178, 178);
   color: black;
@@ -168,62 +164,61 @@ h1 {
 }
 
 #div-resp{
-  margin-top: 5px;
+  
   border: solid black;
 }
 #div-propri{
-  margin-top: 5px;
+ 
   border: solid black;
 }
 #div-de{
-  margin-top: 5px;
+  
   border: solid black;
 }
 #div-para{
-  margin-top: 5px;
+  
   border: solid black;
 }
 #div-data{
-  margin-top: 5px;
+ 
   border: solid black;
 }
 #div-hora{
-  margin-top: 5px;
+  
   border: solid black;
 }
 #div-descri{
-  margin-top: 5px;
+ 
   border: solid black;
 }
 #div-item{
-  margin-top: 5px;
+  
   border: solid black;
 }
-.div-add-item{
-  margin-top: 5px;
+#div-add-item{
+  
   border: solid black;
-  text-align: center;
-}
+ }
 .list{
-  margin-left: 40px;
+ 
 }
 #div-portador{
-  margin-top: 5px;
+  
   border: solid black;
 }
 #div-autorizado{
-  margin-top: 5px;
+  
   border: solid black;
 }
 #div-retorna{
-  margin-top: 5px;
+  
   border: solid black;
 }
 #div-imp-cau{
-  margin-top: 5px;
+  
   border: solid black;
 }
 #div-limpar-form{
-  margin-top: 5px;
+ 
   border: solid black;
 }
