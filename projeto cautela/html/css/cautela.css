@@ -8,10 +8,12 @@ body {
 /* box da pagina  */
 .box {
   border: solid 1px rgba(255, 255, 255, 0.514);
-  background-color: #d9e7e971;
+  background-color: #cde4e7b0;
   margin-top: 25px;
   box-shadow: 4px 4px 0.55em #00000091;
   align-items: center ;
+  width: 700px;
+  
 }
 /* tiulo da pagina  */
 h1 {
@@ -159,66 +161,64 @@ h1 {
 }
 
 #div-1{
-  text-align: center;
-  border: solid black;
+ 
+  
 }
 
-#div-resp{
+#div-resp{  
   
-  border: solid black;
+  
 }
 #div-propri{
  
-  border: solid black;
+  
 }
 #div-de{
   
-  border: solid black;
+  
 }
 #div-para{
+ 
   
-  border: solid black;
 }
 #div-data{
- 
-  border: solid black;
+  
+  
 }
 #div-hora{
   
-  border: solid black;
+  
 }
 #div-descri{
  
-  border: solid black;
+  
 }
 #div-item{
   
-  border: solid black;
-}
+  
 #div-add-item{
   
-  border: solid black;
+
  }
-.list{
+
  
 }
 #div-portador{
   
-  border: solid black;
+ 
 }
 #div-autorizado{
-  
-  border: solid black;
+ 
+ 
 }
 #div-retorna{
   
-  border: solid black;
+  
 }
 #div-imp-cau{
-  
-  border: solid black;
+ 
 }
 #div-limpar-form{
  
-  border: solid black;
+  
 }
