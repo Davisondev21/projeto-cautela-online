@@ -7,7 +7,7 @@ body {
 }
 /* box da pagina  */
 .box {
-  border: solid 1px rgba(255, 255, 255, 0.514);
+  border: solid 1px rgb(0, 0, 0);
   background-color: #d9e7e971;
   margin-top: 25px;
   box-shadow: 4px 4px 0.55em #00000091;
