@@ -161,3 +161,18 @@ h1 {
 .obrigatorio{
   color: red;
 }
+#txt-sim
+{
+  margin-left: 50px;
+}
+#aprovado{
+  margin-left: -0px;
+}
+
+#txt-nao{
+  margin-left: 50px;
+}
+
+#reporvado{
+margin-left: -0px;
+}
