@@ -1,160 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    /* background-image: linear-gradient(to right, rgba(0, 138, 23, 0.836), rgb(0, 46, 6)); */
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;src: ;
 }
- .box{
-  border: solid 1px rgb(118, 118, 118);
-  background-color: #ccc;
-  margin-top: 5px;
- }
-h1 {
-  
-    margin-left: 19%;
-    font-size: 40px;
-}
- 
-.btn_user {
-        width: -1px;
-        border: none; /* Remove a borda do botão */
-        border-radius: 30px; /*Borda arredondada */
-        cursor: pointer;
-        margin-left: 15px;
-}
-img {
-    border-radius: 50px;
-    width: 5vh; /* Diminui a largura da imagem para 70px do tamanho original */
- 
-}
-/* Estilos para telas de celular */
-@media only screen and (max-width: 600px) {
-    body {
-      font-size: 14px;
-    }
-    .container {
-      width: 100%;
-    }   
-  }
-  
-  /* Estilos para tablets */
-  @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    body {
-      font-size: 16px;
-    }
-  }
-  
-  /* Estilos para telas maiores */
-  @media only screen and (min-width: 1025px) {
-    body {
-      font-size: 18px;
-    }
-  }
-  
- 
-  .checkbox-container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-  }
-  
-  
-  .checkbox-container {
-    position: relative;
-    display: inline-block;
-    font-size: 18px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    margin-left: 15px;
-  }
-  
-  /* Style the checkmark */
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 30px; /* Make the checkbox slightly bigger */
-    width: 30px; /* Make the checkbox slightly bigger */
-    border: 2px solid #ccc; /* Add border for 3D effect */
-    border-radius: 6px; /* Round the corners */
-    background-color: #fff; /* Default color */
-    transition: all 0.3s ease; /* Add smooth transition */
-  }
-  
-  /* Show the checkmark when checkbox is checked */
-  .checkbox-container input:checked ~ .checkmark:after {
-    display: block;
-    animation: checkboxExpand 0.3s ease forwards;
-  }
-  
-  /* Style the checkmark/indicator */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%) rotate(45deg) scale(0); /* Center and hide initially, then scale to appear */
-    width: 8px; /* Adjust size */
-    height: 15px; /* Adjust size */
-    border: solid #fff; /* Change color of the tick to white */
-    border-width: 0 4px 4px 0; /* Adjust thickness and direction */
-  }
-  
-  /* On hover, add a grey background color */
-  .checkbox-container:hover .checkmark {
-    background-color: #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
-    transform: scale(1.05); /* Scale up slightly */
-  }
-  
-  /* When the checkbox is checked, add a green background */
-  .checkbox-container input:checked ~ .checkmark {
-    background-color: #4caf50;
-    border-color: #4caf50; /* Change border color */
-    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Add shadow for 3D effect */
-  }
-  
-  @keyframes checkboxExpand {
-    0% {
-      transform: translate(-50%, -50%) rotate(45deg) scale(0);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(45deg) scale(1);
-    }
-  }
- 
-  .form-control1{
-    width: 25%;
-    padding: 25px;
-    border: solid 2px black;
-    margin-left: 15px;
-  }
-  
-  .form1{
-    width: 30%;
-    padding: 7px ;
-    border-radius: 6px;
-  }
-  .form-control{
-    width: 75%;
-    margin-left: 10px;
-  }
-  .form-txt{
-    margin-left:15px;
-  }
-  .button-imp{
-    margin-left: 15px;
-  }
-  .form-control3{
-     border-radius: 6px;
-    background-color: rgb(231, 9, 9);
-    color: black;
-  }
-  .form-control3:hover{
-    transform:	translate(0,	.22rem);
-	background-color:	rgba(226, 7, 7, 0.752);
-	transition:	.25s;
-  }
 
-  
+.container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="time"],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 100px;
+}
+
+.itens-container {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.item-input {
+  flex: 1;
+  margin-right: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-item-btn {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.add-item-btn:hover {
+  background-color: #45a049;
+}
+
+.item-list {
+  margin-left: 1.5rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.delete-btn {
+  padding: 0.25rem 0.5rem;
+  margin-left: 0.5rem;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.delete-btn:hover {
+  background-color: #da190b;
+}
+
+.submit-btn {
+  padding: 0.5rem 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+.item span {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  width: 90%;
+}

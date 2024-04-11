@@ -1,148 +1,376 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+Best AI Model for Code. View Model Page
+Blackbox
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cautela Online </title>
+crie umn script que use o window.prompt como campo obrigatoprio de senha
 
-    <!-- IMPORTAÇÃO DO ARQUIVO BOOTSTRAP PARA O CSS -->
+Sources: developer.mozilla.org (1) community.jamf.com (2) teamtreehouse.com (3) sitepoint.com (4)
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
-    <!-- link para importação do css -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="./css/cautela.css">
-    <script src="./javascript/index.js"></script>
-</head>
+Sure, here is a simple script that uses a custom prompt for a password field:
 
-<body>
+html
 
-    <main>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 
-        <div class="box">
-            <div>   
-                <fieldset>
+<html>
 
-                    <h1 class="category"><strong> CAUTELA ONLINE </strong></h1>
+	<head>
 
-                    <form class="full-form" method="post" id="cautela-form">
+		<title>Custom Password Prompt</title>
 
-                        <label for="data" class="form-txt"> <strong> Responsável</strong></label><br>
-            <input type="text" name="data" id="data" class="form-control" required><br>
-
-            <label for="data" class="form-txt"> <strong> Descrição/Anotação  </strong></label><br>
-            <input type="text" name="data" id="data" class="form-control" required><br>
-
-                        <!-- SETORES DA EMPRESA  -->
-                        <label for="setor" class="form-txt"> <strong class="de_para"> DE: </strong> <br><br></label>                       
-                        <select class="form1" id="user-type" name="user-type">
-                            
-                            <option value="setor"> <strong> T.I </strong></option>
-                            <option value="setor"> <strong> AMBULATORIO </strong></option>
-                            <option value="setor"> <strong> COMPRAS </strong></option>
-                            <option value="setor"> <strong> CONTROLADORIA </strong></option>
-                            <option value="setor"> <strong> ENGENHARIA DE PRODUTO </strong></option>
-                            <option value="setor"> <strong> ENGENHARIA DE TESTE/PROCESSO </strong></option>
-                            <option value="setor"> <strong> ESTOQUE </strong></option>
-                            <option value="setor"> <strong> EXPEDIÇÃO </strong></option>
-                            <option value="setor"> <strong> IMPORTAÇÃO </strong></option>
-                            <option value="setor"> <strong> SMT </strong></option>
-                            <option value="setor"> <strong> ÁREA TECNICA </strong></option>
-                            <option value="setor"> <strong> RECEBIMENTO</strong></option>
-                            <option value="setor"> <strong> FACILITES </strong></option>
-                            <option value="setor"> <strong> SEGURANÇA E MONITORAMENTO </strong></option>
-                            <option value="setor"> <strong> QUALIDADE </strong></option>
-                            <option value="setor"> <strong> CERTIFICAÇÕES </strong></option>
-                            <option value="setor"> <strong> PCP </strong></option>
-                            <option value="setor"> <strong> PCM </strong></option>
-                            <option value="setor"> <strong> RH </strong></option>
-                            <option value="setor"> <strong> SESMT </strong></option>
-                            <option value="setor"> <strong> FISCAL </strong></option>
-                        </select>
-                        <label for="setor" class="form-txt"></label>
-                        <strong>para</strong> 
-                    
-                        <select class="form1" id="user-type" name="user-type">
-                            
-                            <option value="setor"> <strong> T.I </strong></option>
-                            <option value="setor"> <strong> DESENVOLVIMENTO </strong></option>
-                            <option value="setor"> <strong> AMBULATORIO </strong></option>
-                            <option value="setor"> <strong> COMPRAS </strong></option>
-                            <option value="setor"> <strong> CONTROLADORIA </strong></option>
-                            <option value="setor"> <strong> ENGENHARIA DE PRODUTO </strong></option>
-                            <option value="setor"> <strong> ENGENHARIA DE TESTE/PROCESSO </strong></option>
-                            <option value="setor"> <strong> ESTOQUE </strong></option>
-                            <option value="setor"> <strong> EXPEDIÇÃO </strong></option>
-                            <option value="setor"> <strong> IMPORTAÇÃO </strong></option>
-                            <option value="setor"> <strong> SMT </strong></option>
-                            <option value="setor"> <strong> ÁREA TECNICA </strong></option>
-                            <option value="setor"> <strong> RECEBIMENTO</strong></option>
-                            <option value="setor"> <strong> FACILITES </strong></option>
-                            <option value="setor"> <strong> SEGURANÇA E MONITORAMENTO </strong></option>
-                            <option value="setor"> <strong> QUALIDADE </strong></option>
-                            <option value="setor"> <strong> CERTIFICAÇÕES </strong></option>
-                            <option value="setor"> <strong> PCP </strong></option>
-                            <option value="setor"> <strong> PCM </strong></option>
-                            <option value="setor"> <strong> RH </strong></option>
-                            <option value="setor"> <strong> SESMT </strong></option>
-                            <option value="setor"> <strong> FISCAL </strong></option>
-                        </select><br><br>
+		<script type="text/javascript">
 
 
-                        <!-- data do formulario  -->
+			// custom prompt class
 
-                        <label for="data" class="form-txt" > <strong> Data: </strong><br><br></label>
-                        <input type="date" name="data" id="data" class="form1" required>
+			function MyPrompt(prompt) {
+
+				
+
+				// object reference for "private methods"
+
+				var _me = this;
+
+	
+
+				// prompt container node
+
+				var _prompt;
+
+	
+
+				// prompt input node
+
+				var _input;
+
+	
+
+				// prompt submit button node
+
+				var _submit
+
+	
+
+				// prompt event handlers
+
+				var _events = {
+
+					submit:[]
+
+				};
+
+				
+
+				_init();
+
+				function _init() {
 
 
-                        <label for="hora" class="form-txt"> <strong> Hora:</strong><br><br></label>
-                        <input type="time" name="hora" id="hora" class="form1" required><br><br>
+					// Get prompt container node
 
-                       <label for="hora" class="form-txt"> <strong> propriedade :</strong></label>
+					_prompt = document.getElementById(prompt);
 
-                             <select class="form-control" id="user-type" name="user-type">
-                                <option value="padrao"> <strong> CALLIDUS </strong></option>
-                                <option value="gestor"> <strong> TECTOY </strong></option>
-                                <option value="admin"> <strong> VICTUM </strong></option>
-                                <option value="admin"> <strong> ETTERA</strong></option>
-                                <option value="admin"> <strong> AMAZONAS INOVARE </strong></option>
-                                <option value="admin"> <strong> TÁ NA PORTA </strong></option>
-                            </select><br>
+	
 
-                        <!-- se retorna ou não  -->
+					// Get prompt input node
 
-                        <label for="itens" class="form-txt"> <strong> Itens: </strong></label> 
+					_input = document.getElementById('prompt-info');
 
-                <input class="form-control"  type="text" id="taskInput" placeholder="Digite um novo item"> <br>
-                <button class="btn_user " onclick="addTask()">
-                    <img src="img/imagem de um mais.png" alt="">
-                    </button>
-               
-                <ul id="taskList">
-                </ul>
-                <label for="data" class="form-txt"> <strong> portador: </strong><br>assinatura/carimbo <br><br><br></label>
-            <input type="text" name="data" id="data" class="form-control1" required>
+					_input.type = 'password';
 
-            <label for="data" class="form-txt"> <strong> Autorizado Por:</strong> <br>assinatura/carimbo<br> <br></label>
-            <input type="text" name="data" id="data" class="form-control1" required><br>
-                          <label for="" class="form-txt"> <strong> RETORNA: </strong> </label><br>
+	
 
-                            <label class="container">
-                            <input checked="checked" type="checkbox">
-                            </label>
-                          <br>
-                          <br>
+					// Get submit node
 
-                          
-                </fieldset>
+					_submit = document.getElementById('prompt-submit');
+
+	
+
+					// attach submit handler
+
+					_submit['onclick'] = _onSubmit;
+
+	
+
+				}
+
+	
+
+				// display the prompt container
+
+				this.prompt = function() {
+
+					_prompt.style.display = 'block';
+
+				}
+
+	
+
+				// Get the input value
+
+				this.getInputValue = function() {
+
+					return _input.value;
+
+				}
+
+	
+
+				// Attach event handler
+
+				this.addEventHandler = function(evt,handler) {
+
+					// push handler onto event stack
+
+					_events[evt].push(handler);
+
+				}
+
+	
+
+				// on submit action
+
+				function _onSubmit(evt) {
+
+					
+
+					// ie bubble and cancel default action
+
+					evt.cancelBubble = true;
+
+					evt.returnValue = false;
+
+					
+
+					// ff bubble and cancel default action
+
+					if (evt.stopPropagation) {
+
+						evt.stopPropagation();
+
+						evt.preventDefault();
+
+					}
+
+				
+
+					// hide the prompt window
+
+					_prompt.style.display = 'none';
+
+					
+
+					// fire off submit event
+
+					_fire('submit');
+
+	
+
+				}
+
+	
+
+				// fire prompt event
+
+				function _fire(evt) {
+
+					// call event handlers
+
+					for(var i=0;i < _events[evt].length;i++) {
+
+						_events[evt][i]({target:_me,event:evt});
+
+					}
+
+				}
+
+				
+
+			}
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<div id="prompt" style="display: none;">
+
+			<form>
+
+				<fieldset>
+
+					<legend>Password Prompt</legend>
+
+					<div>
+
+						<label for="prompt-info">Password:</label>
+
+						<input type="password" name="info" value="" id="prompt-info">
+
+					</div>
+
+					<input type="submit" name="submit" value="Submit" id="prompt-submit">
+
+				</fieldset>
+
+			</form>
+
+		</div>
+
+		<script type="text/javascript">
+
+			// create prompt object
+
+			var prompt = new MyPrompt('prompt');
+
+			
+
+			// display prompt
+
+			prompt.prompt();
+
+			
+
+			// attach submit handler
+
+			prompt.addEventHandler('submit',function(evt) {
+
+				alert('Password: ' + evt.target.getInputValue());
+
+			});
+
+		</script>
+
+	</body>
+
 </html>
-                <button class="button-imp" onclick="window.print()"><img src="img/imagem de uma impresora.png" alt=""></button>
-            </div>
-            <!-- <textarea name="" class="bloco-txt" cols="30" rows="10"></textarea> -->
-            
-        </form>
-            
-</body>
+
+This script creates a custom prompt class that can be used to display a custom password prompt. The prompt is displayed by calling the prompt() method of the MyPrompt object. The password value can be retrieved by calling the getInputValue() method. The script also allows you to attach event handlers to the submit event of the prompt.
+
+Note that this script uses a custom prompt container, rather than the built-in window.prompt() method. This is because the window.prompt() method does not allow you to customize the appearance of the prompt or to use a password input field.
+Is this conversation helpful so far?
+By using Blackbox you agree to the Terms
+and Privacy
+
+.
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>Custom Password Prompt</title>
+		<script type="text/javascript">
+
+			// custom prompt class
+			function MyPrompt(prompt) {
+				
+				// object reference for "private methods"
+				var _me = this;
+	
+				// prompt container node
+				var _prompt;
+	
+				// prompt input node
+				var _input;
+	
+				// prompt submit button node
+				var _submit
+	
+				// prompt event handlers
+				var _events = {
+					submit:[]
+				};
+				
+				_init();
+				function _init() {
+
+					// Get prompt container node
+					_prompt = document.getElementById(prompt);
+	
+					// Get prompt input node
+					_input = document.getElementById('prompt-info');
+					_input.type = 'password';
+	
+					// Get submit node
+					_submit = document.getElementById('prompt-submit');
+	
+					// attach submit handler
+					_submit['onclick'] = _onSubmit;
+	
+				}
+	
+				// display the prompt container
+				this.prompt = function() {
+					_prompt.style.display = 'block';
+				}
+	
+				// Get the input value
+				this.getInputValue = function() {
+					return _input.value;
+				}
+	
+				// Attach event handler
+				this.addEventHandler = function(evt,handler) {
+					// push handler onto event stack
+					_events[evt].push(handler);
+				}
+	
+				// on submit action
+				function _onSubmit(evt) {
+					
+					// ie bubble and cancel default action
+					evt.cancelBubble = true;
+					evt.returnValue = false;
+					
+					// ff bubble and cancel default action
+					if (evt.stopPropagation) {
+						evt.stopPropagation();
+						evt.preventDefault();
+					}
+				
+					// hide the prompt window
+					_prompt.style.display = 'none';
+					
+					// fire off submit event
+					_fire('submit');
+	
+				}
+	
+				// fire prompt event
+				function _fire(evt) {
+					// call event handlers
+					for(var i=0;i < _events[evt].length;i++) {
+						_events[evt][i]({target:_me,event:evt});
+					}
+				}
+				
+			}
+		</script>
+	</head>
+	<body>
+		<div id="prompt" style="display: none;">
+			<form>
+				<fieldset>
+					<legend>Password Prompt</legend>
+					<div>
+						<label for="prompt-info">Password:</label>
+						<input type="password" name="info" value="" id="prompt-info">
+					</div>
+					<input type="submit" name="submit" value="Submit" id="prompt-submit">
+				</fieldset>
+			</form>
+		</div>
+		<script type="text/javascript">
+			// create prompt object
+			var prompt = new MyPrompt('prompt');
+			
+			// display prompt
+			prompt.prompt();
+			
+			// attach submit handler
+			prompt.addEventHandler('submit',function(evt) {
+				alert('Password: ' + evt.target.getInputValue());
+			});
+		</script>
+	</body>
 
 </html>
