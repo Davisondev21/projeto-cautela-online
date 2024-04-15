@@ -6,11 +6,16 @@ body {
 }
 /* box da pagina  */
 .box {
-  border: solid 1px rgb(0, 0, 0);
-  background-color: #d1e5e771;
+  border: solid 1px rgba(0, 0, 0, 0.514);
+  border-radius: 10px;
+  background-color: #cde4e7b0;
   margin-top: 25px;
   box-shadow: 4px 4px 0.55em #00000091;
-  border-radius: 10px;
+  align-items: center ;
+  width: 700px;
+  
+  
+  
 }
 /* tiulo da pagina  */
 h1 {
@@ -71,7 +76,7 @@ h1 {
   border: 2px solid rgb(0, 0, 0);
   border-radius: 6px;
   background-color: white;
-  margin-left: 50px;
+  margin-left: 20px;
   margin-top: -5px;
 }
 /* div carimbo 2 */
@@ -81,8 +86,7 @@ h1 {
   border: solid 2px black;
   border-radius: 6px;
   background-color: white;
-  margin-top: -100px;
-  margin-left: 400px;
+  margin-left: 20px;
 }
 .de {
   width: 60%;
@@ -128,10 +132,7 @@ h1 {
   width: 100%;
 }
 /* button add item na liseta de tarefas  */
-.bnt-add-item {
-  margin-left: 400px;
-  margin-top: -60px;
-}
+
 /* checkbos retorna or no  */
 .checkbox {
   margin-left: 55px;
@@ -144,7 +145,7 @@ h1 {
 }
 /* button limpar form */
 .limpar {
-  margin-left: 240px;
+  margin-left: 40px;
   border-radius: 6px;
   background-color: rgb(185, 178, 178);
   color: black;
@@ -160,9 +161,8 @@ h1 {
 .obrigatorio{
   color: red;
 }
-#txt-sim
-{
-  margin-left: 50px;
+#txt-sim{
+  margin-left: 40px;
 }
 #aprovado{
   margin-left: -0px;
