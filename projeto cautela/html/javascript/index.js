@@ -47,3 +47,6 @@ document.addEventListener("DOMContentLoaded", function () {
   addoptions("#user-type2", sectors);
   addoptions("#user-type3", propiedades);
 });
+
+
+
