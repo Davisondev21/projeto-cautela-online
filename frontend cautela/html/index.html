@@ -23,58 +23,68 @@
 <html lang="pt-BR">
 
 <body>
-<main>
-  <table>
 
-    <thead>
-      <tr>
-        <th>responsavel</th>
-        <th>propriedade</th>
-        <th>de </th>
-        <th>para</th>
-      </tr>
-    </thead>
+  <h1>cautela</h1>
 
-    <tbody>
-      <tr>
-        <td>
-            <strong> RESPONSÁVEL:</strong>
-          <input type="text" minlength="1" maxlength="30" class="form-control" placeholder="Digite seu nome" required /><br/>
-        </td>
+  <main>
+    <table>
 
-        <td>
-            <strong> PROPRIEDADE:</strong>
-          <select class="form-control" id="user-type3" name="user-type"></select><br>
-        </td>
+      <thead>
+        <tr>
+          <th>responsavel</th>
+          <th>propriedade</th>
+          <th>de </th>
+          <th>para</th>
+          <th>data</th>
+        </tr>
+      </thead>
 
-        <td>
-            <strong> DE: </strong> <br />        
-          <select class="form1" id="user-type2" name="user-type">
-            <option value="setor">Selecione um Setor</option>
-          </select><br><br>
-        </td>
- 
-        <td>
-            <strong> PARA:</strong><br>
-          <select class="form1" id="user-type1" name="user-type">
-            <option value="setor">Selecione um Setor</option>
-          </select><br /><br>
-        </td>
-      </tr>
-    </tbody>
+      <tbody>
+        <tr>
+          <td>
+            <input type="text" minlength="1" maxlength="30" class="form-control" placeholder="Digite seu nome" required /><br />
+          </td>
 
-  </table>
+          <td>
+            <select class="form-control" id="user-type3" name="user-type"></select><br>
+          </td>
 
-</main>
-  <label for="itens" class="form-txt"> <strong> ITEM: </strong>
-    <span class="obrigatorio">*</span>
-  </label>
-  <input class="form-control" type="text" id="taskInput" placeholder="Digite um novo item" />
+          <td>
+            <select class="form1" id="user-type2" name="user-type">
+              <option value="setor">Selecione um Setor</option>
+            </select><br><br>
+          </td>
 
-  <button type="button" class="form-control3-1" onclick="addTask()">
-    adicionar item
-  </button>
-  <ul class="list" id="taskList"></ul>
+          <td>
+            <select class="form1" id="user-type1" name="user-type">
+              <option value="setor">Selecione um Setor</option>
+            </select><br /><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            
+          </td>
+        </tr>
+      </tbody>
+
+    </table>
+
+    <div>
+      <label for="itens" class="subtitle" >
+        <strong> ITEM: </strong>
+           </label>
+    
+       <input class="form-control" type="text" id="taskInput" placeholder="Digite um novo item"/>    
+       <button type="button" class="bnt_itens" onclick="addTask()">
+         +
+       </button> 
+       
+       <ul class="list" id="taskList"></ul>
+
+    </div>
+
+  </main>
 
 
 

@@ -6,7 +6,7 @@ function addTask() {
     let taskItem = document.createElement("li");
     taskItem.innerHTML =
       taskInput.value +
-      ' <button class="form-control3"onclick="deleteTask(this)">Apagar</button>';
+      ' <button class=""onclick="deleteTask(this)">Apagar</button><br><br> ';
     taskList.appendChild(taskItem);
     taskInput.value = "";
   } else {
