@@ -24,7 +24,7 @@
 
 <body>
 
-  <h1>cautela</h1>
+  <h1>cadastro cautela</h1>
 
   <main>
     <table>
@@ -35,7 +35,6 @@
           <th>propriedade</th>
           <th>de </th>
           <th>para</th>
-          <th>data</th>
         </tr>
       </thead>
 
@@ -46,43 +45,37 @@
           </td>
 
           <td>
-            <select class="form-control" id="user-type3" name="user-type"></select><br>
+            <input type="text" minlength="1" maxlength="30" class="form-control" placeholder="Digite a propriedade" required /><br>
           </td>
 
           <td>
-            <select class="form1" id="user-type2" name="user-type">
-              <option value="setor">Selecione um Setor</option>
-            </select><br><br>
+            <input type="text" minlength="1" maxlength="30" class="form-control" placeholder="Digite o setor" required /><br />
           </td>
 
           <td>
-            <select class="form1" id="user-type1" name="user-type">
-              <option value="setor">Selecione um Setor</option>
-            </select><br /><br>
+            <input type="text" minlength="1" maxlength="30" class="form-control" placeholder="Digite o setor" required /><br />
           </td>
         </tr>
-        <tr>
-          <td>
-            
-          </td>
-        </tr>
+
       </tbody>
 
     </table>
+    <br>
 
     <div>
-      <label for="itens" class="subtitle" >
+      <label for="itens" class="subtitle">
         <strong> ITEM: </strong>
-           </label>
-    
-       <input class="form-control" type="text" id="taskInput" placeholder="Digite um novo item"/>    
-       <button type="button" class="bnt_itens" onclick="addTask()">
-         +
-       </button> 
-       
-       <ul class="list" id="taskList"></ul>
+      </label>
 
+      <input class="form-control" type="text" id="taskInput" placeholder="Digite um novo item" />
+      <button type="button" class="bnt_itens" onclick="addTask()">
+        +
+      </button>
+
+      <ul class="list" id="taskList"></ul>
+      <button type="submit"  >salvar</button>
     </div>
+
 
   </main>
 
