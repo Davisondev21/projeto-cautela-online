@@ -91,3 +91,11 @@ input{
   margin-left: 1400px;
   margin-top: -40px;
 }
+.bnt-save{
+  margin-left: 1400px;  
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #0099ff;
+  border: none;
+  color: #fff k;
+}
